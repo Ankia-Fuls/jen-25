@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../css/Game.scss';
 
 function Game({ setState }) {
   return (
