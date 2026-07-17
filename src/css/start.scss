@@ -1,13 +1,59 @@
 .header-text {
-  width: 25rem;
+  width: 35rem;
   stroke: var(--text-colour);
   fill: hsl(from var(--text-colour) h calc(s - 20%) l);
   stroke-width: 0.404283;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-miterlimit: 0;
+
+  @media screen and (max-width: var(--bp-m)) {
+    width: 25rem;
+  }
 }
 
 .starting-page {
   width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+}
+
+.starting-message {
+  font-size: 3rem;
+  font-family: "Playwrite ID", cursive; //"Dancing Script", cursive;
+  user-select: none;
+  outline: 0.25rem red solid;
+  border-radius: 2rem;
+  padding: 2rem 3rem;
+  background-color: hsl(from var(--bg-colour) h calc(s + 10) l);
+
+  @media screen and (max-width: var(--bp-m)) {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  &:hover {
+    cursor: default;
+  }
+
+  button {
+    color: var(--text-colour);
+    background: none;
+    border: none;
+    font-size: 3rem;
+    font-family: "Playwrite ID", cursive; //"Dancing Script", cursive;
+
+    @media screen and (max-width: var(--bp-m)) {
+      font-size: 2rem;
+    }
+
+    &:hover {
+      //color: red;
+      cursor: default;
+    }
+  }
 }

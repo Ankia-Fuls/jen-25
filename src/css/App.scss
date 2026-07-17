@@ -1,6 +1,7 @@
 :root {
   --bg-colour: #202537;
   --text-colour: #e9ebf4;
+  --bp-m: 700px;
 }
 
 *,
@@ -16,4 +17,5 @@ html {
 body {
   font-size: 100%;
   background-color: var(--bg-colour);
+  color: var(--text-colour);
 }
