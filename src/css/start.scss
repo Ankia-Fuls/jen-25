@@ -1,0 +1,13 @@
+.header-text {
+  width: 25rem;
+  stroke: var(--text-colour);
+  fill: hsl(from var(--text-colour) h calc(s - 20%) l);
+  stroke-width: 0.404283;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 0;
+}
+
+.starting-page {
+  width: 100vw;
+}

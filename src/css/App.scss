@@ -1,0 +1,19 @@
+:root {
+  --bg-colour: #202537;
+  --text-colour: #e9ebf4;
+}
+
+*,
+*::before,
+*::after,
+body,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 100%;
+  background-color: var(--bg-colour);
+}

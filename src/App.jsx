@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import Start from './components/Start';
-import Game from './components/Game';
-import Done from './components/Done';
+import { useState } from "react";
+import Start from "./pages/Start";
+import Game from "./pages/Game";
+import Done from "./pages/Done";
+import "./css/App.scss";
 
 function App() {
-
   const [state, setState] = useState(0);
-
 
   return (
     <>
@@ -14,7 +13,7 @@ function App() {
       {state === 1 && <Game setState={setState} />}
       {state === 2 && <Done />}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
