@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "../../css/Sigil.scss";
+import RubyFunc from "../Functions/rubyFunction.jsx";
 
 function Rock({ setState }) {
   return (
@@ -54,6 +55,13 @@ function Rock({ setState }) {
           </g>
         </g>
       </svg>
+      <span className="jp">
+        {/* 25 years */}
+        {<RubyFunc kanji="二" text="に" />}
+        {<RubyFunc kanji="十" text="じゅう" />}
+        {<RubyFunc kanji="五" text="ご" />}
+        {<RubyFunc kanji="歳" text="さい" />}
+      </span>
     </>
   );
 }

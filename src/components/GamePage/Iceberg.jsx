@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "../../css/Sigil.scss";
+import RubyFunc from "../Functions/rubyFunction.jsx";
 
 function Iceberg({ setState }) {
   return (
@@ -43,6 +44,10 @@ function Iceberg({ setState }) {
           </g>
         </g>
       </svg>
+      <span className="jp">
+        {/* Your */}
+        {<RubyFunc kanji="君" text="きみ" />}の
+      </span>
     </>
   );
 }

@@ -16,6 +16,9 @@ import Rock from "../components/GamePage/Rock.jsx";
 import Paper from "../components/GamePage/Paper.jsx";
 
 function Game({ setState }) {
+  const done = () => {
+    setState(2);
+  };
   return (
     <section className="game-page">
       <span>{<RockBreaker />}</span>
@@ -32,6 +35,7 @@ function Game({ setState }) {
       <span>{<Vines />}</span>
       <span>{<Rock />}</span>
       <span>{<Paper />}</span>
+      <button onClick={done}>DONE</button>
     </section>
   );
 }

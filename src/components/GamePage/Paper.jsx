@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "../../css/Sigil.scss";
+import RubyFunc from "../Functions/rubyFunction.jsx";
 
 function Paper({ setState }) {
   return (
@@ -76,6 +77,12 @@ function Paper({ setState }) {
           <path d="m 92.213649,88.507821 -0.912612,0.281601 -1.278036,0.971082 -1.929294,3.835815 6.660286,8.518491 3.855894,-3.693157 z" id="path274" className="paper fold6" />
         </g>
       </svg>
+      <span className="jp">
+        {/* birthday */}
+        {<RubyFunc kanji="誕" text="たん" />}
+        {<RubyFunc kanji="生" text="じょう" />}
+        {<RubyFunc kanji="日" text="び" />}
+      </span>
     </>
   );
 }

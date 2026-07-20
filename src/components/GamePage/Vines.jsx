@@ -138,6 +138,10 @@ function Vines({ setState }) {
           </g>
         </g>
       </svg>
+      <span className="jp">
+        {/* Congrats */}
+        おめでとう
+      </span>
     </>
   );
 }

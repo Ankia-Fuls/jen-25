@@ -11,7 +11,7 @@ function App() {
     <>
       {state === 0 && <Start setState={setState} />}
       {state === 1 && <Game setState={setState} />}
-      {state === 2 && <Done />}
+      {state === 2 && <Done setState={setState} />}
     </>
   );
 }
