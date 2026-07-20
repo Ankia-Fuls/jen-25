@@ -6,73 +6,73 @@ $bp-m: 700px;
   position: absolute;
 }
 
-.sigil {
-  .svg {
-    width: 300px;
-    height: 300px;
+// .sigil {
+//   .svg {
+//     width: 300px;
+//     height: 300px;
 
-    .text {
-      width: 300px;
-    }
+//     .text {
+//       width: 300px;
+//     }
 
-    .stroke {
-      stroke: var(--black);
-      fill: none;
-      stroke-width: 1.465;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-miterlimit: 0;
-      stroke-dasharray: none;
-      stroke-opacity: 1;
-    }
+//     .stroke {
+//       stroke: var(--black);
+//       fill: none;
+//       stroke-width: 1.465;
+//       stroke-linecap: round;
+//       stroke-linejoin: round;
+//       stroke-miterlimit: 0;
+//       stroke-dasharray: none;
+//       stroke-opacity: 1;
+//     }
 
-    .stroke-white {
-      stroke: var(--white);
-      fill: none;
-      stroke-width: 1.465;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-miterlimit: 0;
-      stroke-dasharray: none;
-      stroke-opacity: 1;
-    }
+//     .stroke-white {
+//       stroke: var(--white);
+//       fill: none;
+//       stroke-width: 1.465;
+//       stroke-linecap: round;
+//       stroke-linejoin: round;
+//       stroke-miterlimit: 0;
+//       stroke-dasharray: none;
+//       stroke-opacity: 1;
+//     }
 
-    .fill {
-      stroke: var(--black);
-      fill: var(--black);
-      stroke-width: 1.465;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-miterlimit: 0;
-      stroke-dasharray: none;
-      stroke-opacity: 1;
-    }
+//     .fill {
+//       stroke: var(--black);
+//       fill: var(--black);
+//       stroke-width: 1.465;
+//       stroke-linecap: round;
+//       stroke-linejoin: round;
+//       stroke-miterlimit: 0;
+//       stroke-dasharray: none;
+//       stroke-opacity: 1;
+//     }
 
-    .fill-white {
-      stroke: var(--white);
-      fill: var(--white);
-      stroke-width: 1.465;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-miterlimit: 0;
-      stroke-dasharray: none;
-      stroke-opacity: 1;
-    }
+//     .fill-white {
+//       stroke: var(--white);
+//       fill: var(--white);
+//       stroke-width: 1.465;
+//       stroke-linecap: round;
+//       stroke-linejoin: round;
+//       stroke-miterlimit: 0;
+//       stroke-dasharray: none;
+//       stroke-opacity: 1;
+//     }
 
-    .width-2 {
-      stroke-width: 1.58761;
-    }
+//     .width-2 {
+//       stroke-width: 1.58761;
+//     }
 
-    .width-3 {
-      stroke-width: 1.74693;
-    }
+//     .width-3 {
+//       stroke-width: 1.74693;
+//     }
 
-    .width-4 {
-      stroke-width: 0.551951;
-    }
+//     .width-4 {
+//       stroke-width: 0.551951;
+//     }
 
-    .width-5 {
-      stroke-width: 1.00568;
-    }
-  }
-}
+//     .width-5 {
+//       stroke-width: 1.00568;
+//     }
+//   }
+// }

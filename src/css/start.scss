@@ -3,7 +3,7 @@ $bp-m: 700px;
 .header-text {
   width: 35rem;
   stroke: var(--text-colour);
-  fill: hsl(from var(--text-colour) h calc(s - 20%) l);
+  fill: hsl(from var(--text-colour) h calc(s - 20%) l); //// No work
   stroke-width: 0.404283;
   stroke-linecap: round;
   stroke-linejoin: round;
