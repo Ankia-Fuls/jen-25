@@ -49,6 +49,8 @@ body,
   width: 300px;
   height: 300px;
 
+  // width: clamp(150px, 15.625vw, 300px);
+
   transition: all ease-in-out 0.05s;
 
   &--chosen {
