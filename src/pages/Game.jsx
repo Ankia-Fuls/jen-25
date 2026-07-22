@@ -213,7 +213,12 @@ function Game({ setState }) {
 
   return (
     <section className="game-page">
-      <div className="text-block">{displayText}</div>
+      <div className="text-block">
+        {displayText}
+        <div className={"counter-display"}>
+          <div className={"counter-display--" + amountCorrect.toString()}></div>
+        </div>
+      </div>
 
       <button onClick={() => select("rockbreaker")}>{<RockBreaker styling={styles.rockbreaker} />}</button>
       <button onClick={() => select("graspingwind")}>{<GraspingWind styling={styles.graspingwind} />}</button>
