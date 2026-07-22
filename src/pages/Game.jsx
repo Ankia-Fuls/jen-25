@@ -40,10 +40,73 @@ function Game({ setState }) {
   const [displayText, setDisplayText] = useState("Uncover the hidden words...");
   const [selectedSigil, setSelectedSigil] = useState("");
 
+  const correctStates = {
+    "iceberg": {
+      "correct": "pyreball",
+      "incorrect":
+      {
+        "rockbreaker": "I don't think ice counts as rock...",
+        "graspingwind": "I don't think ice counts as rock...",
+        "timerewind": "I don't think ice counts as rock...",
+        "snugstone": "I don't think ice counts as rock...",
+        "waterblade": "I don't think ice counts as rock...",
+        "lightseal": "I don't think ice counts as rock...",
+        "sylphshoes": "I don't think ice counts as rock...",
+        "serpentbed": "Putting it to sleep is interesting"
+      }
+    },
+    "vines": {
+      "correct": "graspingwind",
+      "incorrect":
+      {
+        "rockbreaker": "I don't think ice counts as rock...",
+        "pyreball": "I don't think ice counts as rock...",
+        "snugstone": "I don't think ice counts as rock...",
+        "timerewind": "I don't think ice counts as rock...",
+        "waterblade": "I don't think ice counts as rock...",
+        "lightseal": "I don't think ice counts as rock...",
+        "sylphshoes": "I don't think ice counts as rock...",
+        "serpentbed": "Putting it to sleep is interesting"
+      }
+    },
+    "rock": {
+      "correct": "rockbreaker",
+      "incorrect":
+      {
+        "pyreball": "I don't think ice counts as rock...",
+        "graspingwind": "I don't think ice counts as rock...",
+        "snugstone": "I don't think ice counts as rock...",
+        "timerewind": "I don't think ice counts as rock...",
+        "waterblade": "I don't think ice counts as rock...",
+        "lightseal": "I don't think ice counts as rock...",
+        "sylphshoes": "I don't think ice counts as rock...",
+        "serpentbed": "Putting it to sleep is interesting"
+      }
+    },
+    "paper": {
+      "correct": "timerewind",
+      "incorrect":
+      {
+        "rockbreaker": "I don't think ice counts as rock...",
+        "pyreball": "I don't think ice counts as rock...",
+        "graspingwind": "I don't think ice counts as rock...",
+        "snugstone": "I don't think ice counts as rock...",
+        "waterblade": "I don't think ice counts as rock...",
+        "lightseal": "I don't think ice counts as rock...",
+        "sylphshoes": "I don't think ice counts as rock...",
+        "serpentbed": "Putting it to sleep is interesting"
+      }
+    }
+  };
+
+  // correctStates.{iceberg}.correct === {pyreball}
+  // else textdisplay = correctStates.{iceberg}.incorrect.{sigil}
 
   // Complete game, move on to final page
   const done = () => {
-    setState(2);
+    setTimeout(() => {
+      setState(2);
+    }, 1000)
     // maybe add small timer before setting to see effects
   };
 
@@ -80,6 +143,7 @@ function Game({ setState }) {
     // set die sigil se css om uit te grey
     // check if all 4 done - if yes, run done function
     // run clearing function to reset all variables to initial state
+    // reset message 
   }
 
   const clearSelection = () => {
@@ -88,10 +152,8 @@ function Game({ setState }) {
   }
 
 
-
-
   return (
-    <section className="game-page">
+    <section className="game-page" >
 
       <div className="text-block">
         {displayText}
@@ -116,8 +178,8 @@ function Game({ setState }) {
 
 
       {/* TO BE REMOVED */}
-      <button onClick={done}>DONE</button>
-    </section>
+      <button onClick={done} > DONE</button>
+    </section >
   );
 }
 

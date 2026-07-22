@@ -22,4 +22,8 @@ body {
 .jp {
   font-size: 3.5rem;
   font-family: "Noto Serif JP", serif;
+
+  span {
+    color: var(--text-colour);
+  }
 }

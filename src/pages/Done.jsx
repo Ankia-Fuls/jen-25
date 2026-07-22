@@ -3,7 +3,7 @@ import RubyFunc from "../components/Functions/rubyFunction.jsx";
 
 function Done({ setState }) {
   const done = () => {
-    setState(0);
+    setState(3);
   };
 
 
