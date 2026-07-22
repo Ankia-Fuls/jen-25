@@ -141,14 +141,35 @@ function Game({ setState }) {
   }
 
   const action = (selected) => {
-    console.log(selected)
     if (selectedSigil) {
       // check if sigil selected
       // check if sigil is correct - call function if correct
+      if (correctStates[selected].correct === selectedSigil) {
+        correct(selectedSigil, selected);
+      }
       // else call clear function and update display text with funny quip
+      else {
+        const temp = correctStates[selected].incorrect[selectedSigil] || "What?";
+        setDisplayText(temp);
+      }
     }
     else {
       // change text to say something about what was selected
+      if (selected === "rock") {
+        setDisplayText("It's a rock...");
+      }
+      else if (selected === "paper") {
+        setDisplayText("The paper is very crumpled...");
+      }
+      else if (selected === "vines") {
+        setDisplayText("I can't see through the vines.");
+      }
+      else if (selected === "iceberg") {
+        setDisplayText("A large iceberg is blocking the way.");
+      }
+      else {
+        setDisplayText("What?");
+      }
     }
   }
 
