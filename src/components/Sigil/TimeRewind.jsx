@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import "../../css/Sigil.scss";
 
-function TimeRewind({ setState }) {
+function TimeRewind({ styling }) {
   return (
     <>
-      <svg className="svg" id="time-rewind" viewBox="0 0 100.32155 97.97522" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+      <svg className={styling} id="time-rewind" viewBox="0 0 100.32155 97.97522" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs1" />
         <circle id="5__container" cx="50.402447" cy="49.079636" r="39.437977" className="stroke" />
         <g id="5__star" transform="translate(-59.756549,-86.07451)">

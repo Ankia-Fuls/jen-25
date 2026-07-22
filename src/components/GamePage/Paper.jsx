@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import "../../css/Sigil.scss";
 import RubyFunc from "../Functions/rubyFunction.jsx";
 
-function Paper({ setState }) {
+function Paper({ cleared }) {
   return (
     <>
       <svg className="svg" viewBox="0 0 67.641487 86.51667" version="1.1" id="paper" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs1" />
-        <g id="unfolded-paper" transform="translate(-59.717769,-45.094325)">
+        <g id="unfolded-paper" style={cleared ? { display: "inline" } : { display: "none" }} transform="translate(-59.717769,-45.094325)">
           <path d="m 64.935827,45.287585 3.092183,3.285445 3.156603,-2.705661 9.405388,0.386522 2.447977,-0.966306 7.02183,-0.193262 5.411319,2.319136 3.994072,-1.159568 3.671961,1.674934 3.73639,-1.868193 5.92668,2.190295 2.96334,-1.223989 8.05256,1.546092 -1.48167,12.819671 2.96334,7.086251 -3.09218,10.242854 5.15364,6.957409 -4.76712,13.012934 0.83747,3.221021 -1.61051,8.11698 1.09515,3.41429 -1.73936,3.60754 2.06146,8.82561 -3.54313,5.47574 -7.8593,-4.05849 -12.626401,1.48167 -7.021837,-2.96334 -10.049591,3.67196 -3.865227,0.0644 -6.184365,2.06146 -5.669,-1.99704 -5.024797,-0.57978 -0.901888,-11.59568 3.221024,-6.76415 L 61.972486,84.197526 59.71777,75.694024 63.454155,73.310467 61.585964,48.76627 Z" id="path219" className="paper" />
           <g id="g244">
             <path d="m 61.610121,49.032026 2.069506,-0.652258 15.847436,3.575336 3.994068,6.925199 -6.506467,-5.604579 -11.20916,-0.579784 -3.768598,2.045348 z" id="path220" className="paper fold1" />
@@ -37,7 +37,7 @@ function Paper({ setState }) {
             <path d="m 74.47776,88.644478 0.501073,7.424999 1.457669,3.871933 -1.457669,-2.77868 -0.182208,7.06058 6.195092,4.91963 -2.0954,-10.795856 z" id="path244" className="paper fold1" />
           </g>
         </g>
-        <g id="folded-paper" transform="translate(-59.717769,-45.094325)">
+        <g id="folded-paper" style={cleared ? { display: "none" } : { display: "inline" }} transform="translate(-59.717769,-45.094325)">
           <g id="g275">
             <path d="m 85.341948,73.179525 -1.818071,1.93378 6.187669,0.872429 z" id="path250" className="paper fold2" />
             <path d="m 88.120629,79.602377 0.0911,4.555214 4.896855,-1.047699 3.285449,-1.525997 z" id="path251" className="paper fold2" />

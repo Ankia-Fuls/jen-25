@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import "../../css/Sigil.scss";
 
-function PyreBall({ setState }) {
+function PyreBall({ styling }) {
   return (
     <>
-      <svg className="svg" id="pyreball" viewBox="0 0 99.494102 99.494118" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+      <svg className={styling} id="pyreball" viewBox="0 0 99.494102 99.494118" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs1" />
         <circle id="3__container" cx="49.747055" cy="49.747051" r="48.873589" className="stroke" />
         <g id="3__arrow-1" transform="translate(-60.28309,-65.179056)">

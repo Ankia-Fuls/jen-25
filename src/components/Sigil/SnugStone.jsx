@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import "../../css/Sigil.scss";
 
-function SnugStone({ setState }) {
+function SnugStone({ styling }) {
   return (
     <>
-      <svg className="svg" id="snugstone" viewBox="0 0 90.449608 90.449615" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+      <svg className={styling} id="snugstone" viewBox="0 0 90.449608 90.449615" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs1" />
         <circle id="6__container" cx="45.224812" cy="45.224804" r="44.581207" className="stroke" />
         <g id="6__center" transform="translate(-60.00064,-34.855869)">

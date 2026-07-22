@@ -150,32 +150,7 @@ body,
   fill: var(--water2);
 }
 
-#iceberg-main {
-  /* display: inline; */
-  display: none;
-}
-
-#iceberg-melted {
-  display: inline;
-  /* display: none; */
-}
-
-#water {
-  display: inline;
-  /* display: none; */
-}
-
 /* VINES CSS */
-
-#vines-covered {
-  display: inline;
-  /* display: none; */
-}
-
-#vines-uncovered {
-  /* display: inline; */
-  display: none;
-}
 
 .vines {
   fill: var(--vines);
@@ -233,22 +208,7 @@ body,
   fill: var(--shadow-2);
 }
 
-#open-rock {
-  /* display: inline; */
-  display: none;
-}
-
 /* PAPER CSS */
-
-#unfolded-paper {
-  display: inline;
-  /* display: none; */
-}
-
-#folded-paper {
-  /* display: inline; */
-  display: none;
-}
 
 .paper {
   fill: var(--paper1);

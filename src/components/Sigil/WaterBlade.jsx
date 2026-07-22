@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import "../../css/Sigil.scss";
 
-function WaterBlade({ setState }) {
+function WaterBlade({ styling }) {
   return (
     <>
-      <svg className="svg" id="water-blade" viewBox="0 0 95.489037 95.489044" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+      <svg className={styling} id="water-blade" viewBox="0 0 95.489037 95.489044" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs1" />
         <circle id="7__container" cx="47.744526" cy="47.744522" r="47.122292" className="stroke" />
         <g id="7__lines" transform="translate(-59.667426,-29.967438)">

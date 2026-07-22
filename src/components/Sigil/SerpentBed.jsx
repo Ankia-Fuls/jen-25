@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import "../../css/Sigil.scss";
 
-function SerpentBed({ setState }) {
+function SerpentBed({ styling }) {
   return (
     <>
-      <svg className="svg" id="SBOS" viewBox="0 0 87.880066 87.880081" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+      <svg className={styling} id="SBOS" viewBox="0 0 87.880066 87.880081" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs1" />
         <g id="10__containers" transform="translate(-55.963643,-50.19391)">
           <path id="path256" d="M 143.42669,94.133965 A 43.52301,43.52301 0 0 1 100.01157,137.65684 43.52301,43.52301 0 0 1 56.381204,94.349744 43.52301,43.52301 0 0 1 99.580011,50.612158 43.52301,43.52301 0 0 1 143.42455,93.70241" className="stroke width-4" />

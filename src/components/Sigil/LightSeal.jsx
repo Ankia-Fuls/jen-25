@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import "../../css/Sigil.scss";
 
-function LightSeal({ setState }) {
+function LightSeal({ styling }) {
   return (
     <>
-      <svg className="svg" id="light" viewBox="0 0 98.91803 98.918037" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+      <svg className={styling} id="light" viewBox="0 0 98.91803 98.918037" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs1" />
         <circle id="8__container" cx="49.459019" cy="49.459015" r="48.957764" className="stroke" />
         <g id="8__Ts" transform="translate(-55.94866,-35.541297)">

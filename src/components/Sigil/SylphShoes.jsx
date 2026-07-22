@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import "../../css/Sigil.scss";
 
-function SylphShoes({ setState }) {
+function SylphShoes({ styling }) {
   return (
     <>
-      <svg className="svg" id="sylphshoes" viewBox="0 0 89.691246 89.691261" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+      <svg className={styling} id="sylphshoes" viewBox="0 0 89.691246 89.691261" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs1" />
         <circle id="9__container" cx="44.845631" cy="44.845623" r="44.204277" className="stroke" />
         <g id="9__center-spiral" transform="matrix(0.99473603,0,0,1.0298881,-61.311218,-44.314256)">

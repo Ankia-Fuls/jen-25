@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "../../css/Sigil.scss";
 
-function MindWipe({ setState }) {
+function MindWipe({ styling }) {
   return (
     <>
       <svg className="svg" id="mindwipe" viewBox="0 0 79.939323 80.524109" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">

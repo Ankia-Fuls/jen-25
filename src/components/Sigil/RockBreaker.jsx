@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import "../../css/Sigil.scss";
 
-function RockBreaker({ setState }) {
+function RockBreaker({ styling }) {
   return (
     <>
-      <svg className="svg" id="rock-breaker" viewBox="0 0 121.12259 121.17614" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+      <svg className={styling} id="rock-breaker" viewBox="0 0 121.12259 121.17614" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs1" />
         <g transform="translate(-47.917137,-63.040446)">
           <path d="m 86.36687,106.22761 44.82331,0.1822" id="1__h-line-top" className="stroke" />

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import "../../css/Sigil.scss";
 
-function GraspingWind({ setState }) {
+function GraspingWind({ styling }) {
   return (
     <>
-      <svg className="svg" id="grasping-wind" viewBox="0 0 119.85496 119.85495" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+      <svg className={styling} id="grasping-wind" viewBox="0 0 119.85496 119.85495" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs1" />
         <g transform="matrix(0.98004769,0.36111177,-0.36111177,0.98004769,-10.772444,-116.7146)">
           <g id="2__arrow-1" transform="rotate(1.6942656,134.6352,30.789269)">
