@@ -4,7 +4,7 @@ import RubyFunc from "../Functions/rubyFunction.jsx";
 
 function Paper({ cleared }) {
   return (
-    <>
+    <div id="paper-group">
       <svg className="svg" viewBox="0 0 67.641487 86.51667" version="1.1" id="paper" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs1" />
         <g id="unfolded-paper" style={cleared ? { display: "inline" } : { display: "none" }} transform="translate(-59.717769,-45.094325)">
@@ -81,7 +81,7 @@ function Paper({ cleared }) {
         {/* birthday */}
         {<RubyFunc version={2} />}
       </span>
-    </>
+    </div>
   );
 }
 
