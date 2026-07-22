@@ -22,6 +22,102 @@ $bp-m: 700px;
   font-size: 1.5rem;
 }
 
+@keyframes first-correct {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 25%;
+  }
+}
+
+@keyframes second-correct {
+  from {
+    width: 25%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes third-correct {
+  from {
+    width: 50%;
+  }
+
+  to {
+    width: 75%;
+  }
+}
+
+@keyframes last-correct {
+  from {
+    width: 75%;
+    background-color: var(--correct-meter);
+  }
+
+  to {
+    width: 100%;
+    background-color: var(--correct-meter2);
+  }
+}
+
+.counter-display {
+  position: absolute;
+  top: calc(12rem - 1.5rem - 0.25rem);
+
+  width: 100%;
+  height: 1.5rem;
+  background-color: aliceblue;
+
+  &--0 {
+    height: 100%;
+    width: 0;
+  }
+
+  &--1 {
+    height: 100%;
+
+    animation: first-correct 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+
+    background-color: var(--correct-meter);
+  }
+
+  &--2 {
+    height: 100%;
+
+    animation: second-correct 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+
+    background-color: var(--correct-meter);
+  }
+
+  &--3 {
+    height: 100%;
+
+    animation: third-correct 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+
+    background-color: var(--correct-meter);
+  }
+
+  &--4 {
+    height: 100%;
+
+    animation: last-correct 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+
+
+  }
+}
+
 button {
   background-color: inherit;
   border: none;
@@ -43,8 +139,7 @@ button {
   right: calc(4rem + 300px);
   top: 0;
 
-  svg {
-  }
+  svg {}
 
   span {
     left: 20px;
@@ -56,8 +151,7 @@ button {
   left: 50rem;
   top: 15rem;
 
-  span {
-  }
+  span {}
 }
 
 #rock-group {
@@ -78,8 +172,7 @@ button {
   left: 7rem;
   top: 17rem;
 
-  span {
-  }
+  span {}
 }
 
 #mindwipe {
