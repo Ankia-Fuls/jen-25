@@ -125,12 +125,12 @@ button {
 
 .svg {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
 }
 
 .jp {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   font-size: 1.5rem;
 }
 
@@ -139,19 +139,37 @@ button {
   right: calc(4rem + 300px);
   top: 0;
 
+<<<<<<< HEAD
   svg {}
 
+=======
+>>>>>>> 23ff2c99e4ae6f545a251cb24082d4634a263daa
   span {
-    left: 20px;
+    width: 10rem;
+    left: 3.8rem;
+    top: 6rem;
+    font-size: 1.8rem;
   }
 }
 
 #vines-group {
   position: absolute;
-  left: 50rem;
+  left: 47rem;
   top: 15rem;
 
+<<<<<<< HEAD
   span {}
+=======
+  span {
+    height: 10rem;
+    writing-mode: vertical-rl;
+    left: 8.5rem;
+    top: 4rem;
+    font-size: 2rem;
+    color: #5e6234;
+    z-index: -1;
+  }
+>>>>>>> 23ff2c99e4ae6f545a251cb24082d4634a263daa
 }
 
 #rock-group {
@@ -161,9 +179,10 @@ button {
 
   span {
     z-index: 2;
-    left: 6rem;
-    top: 6rem;
-    width: 3rem;
+    left: 6.8rem;
+    top: 7.5rem;
+    width: 6rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -172,7 +191,25 @@ button {
   left: 7rem;
   top: 17rem;
 
+<<<<<<< HEAD
   span {}
+=======
+  // svg {
+  //   &:has(#folded-paper) {
+  //     width: 900px;
+  //     height: 900px;
+  //   }
+  // }
+
+  span {
+    color: black;
+    left: 5rem;
+    top: 2rem;
+    font-size: 4rem;
+    writing-mode: vertical-rl;
+    height: 15rem;
+  }
+>>>>>>> 23ff2c99e4ae6f545a251cb24082d4634a263daa
 }
 
 #mindwipe {
