@@ -10,8 +10,8 @@ $bp-m: 700px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 25%;
-  height: 20%;
+  width: 50rem;
+  height: 12rem;
   background-color: hsl(from var(--bg-colour) h calc(s + 10) l);
   padding: 1rem;
   border-right: 0.25rem solid black;
@@ -53,8 +53,8 @@ button {
 
 #vines-group {
   position: absolute;
-  left: 35%;
-  top: 10%;
+  left: 50rem;
+  top: 15rem;
 
   svg {
   }
@@ -65,8 +65,8 @@ button {
 
 #rock-group {
   position: absolute;
-  left: 50%;
-  bottom: calc(2rem + 300px);
+  left: 78rem;
+  bottom: calc(7rem + 300px);
 
   svg {
   }
@@ -77,12 +77,82 @@ button {
 
 #paper-group {
   position: absolute;
-  left: 2rem;
-  top: 40%;
+  left: 7rem;
+  top: 17rem;
 
   svg {
   }
 
   span {
   }
+}
+
+#mindwipe {
+  left: 2rem;
+  bottom: 2rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+#grasping-wind {
+  left: 20rem;
+  bottom: 7rem;
+  width: 15rem;
+  height: 15rem;
+}
+
+#light {
+  left: 33rem;
+  top: 23rem;
+  width: 12rem;
+  height: 12rem;
+}
+
+#pyreball {
+  left: 57rem;
+  bottom: 7rem;
+  width: 16rem;
+  height: 16rem;
+}
+
+#rock-breaker {
+  left: 67rem;
+  top: 24rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+#SBOS {
+  left: 68rem;
+  top: 3rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+#snugstone {
+  left: 90rem;
+  top: 20rem;
+  width: 18rem;
+  height: 18rem;
+}
+
+#sylphshoes {
+  right: 7rem;
+  bottom: 3rem;
+  width: 14rem;
+  height: 14rem;
+}
+
+#time-rewind {
+  left: 41rem;
+  bottom: 10rem;
+  width: 12rem;
+  height: 12rem;
+}
+
+#water-blade {
+  left: 53rem;
+  top: 3rem;
+  width: 12rem;
+  height: 12rem;
 }
