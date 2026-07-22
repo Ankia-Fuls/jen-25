@@ -4,7 +4,7 @@ import RubyFunc from "../Functions/rubyFunction.jsx";
 
 function Iceberg({ cleared }) {
   return (
-    <>
+    <div id="iceberg-group">
       <svg className="svg" id="iceberg" viewBox="0 0 56.811348 39.787701" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs1" />
         <g id="iceberg-main" style={cleared ? { display: "none" } : { display: "inline" }} transform="translate(-82.267177,-54.596339)">
@@ -48,7 +48,7 @@ function Iceberg({ cleared }) {
         {/* Your */}
         {<RubyFunc version={1} />}
       </span>
-    </>
+    </div>
   );
 }
 

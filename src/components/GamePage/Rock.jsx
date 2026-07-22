@@ -4,7 +4,7 @@ import RubyFunc from "../Functions/rubyFunction.jsx";
 
 function Rock({ cleared }) {
   return (
-    <>
+    <div id="rock-group">
       <svg className="svg" id="rock" viewBox="0 0 127.7052 107.89119" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs1" />
         <g id="main-rock" transform="translate(-34.022362,-56.045105)">
@@ -58,9 +58,8 @@ function Rock({ cleared }) {
       <span className="jp">
         {/* 25 years */}
         {<RubyFunc version={3} />}
-
       </span>
-    </>
+    </div>
   );
 }
 

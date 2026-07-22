@@ -1,13 +1,88 @@
 $bp-m: 700px;
 
 .game-page {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: absolute;
+}
+
+.text-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 20%;
+  background-color: hsl(from var(--bg-colour) h calc(s + 10) l);
+  padding: 1rem;
+  border-right: 0.25rem solid black;
+  border-bottom: 0.25rem solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
 button {
   background-color: inherit;
   border: none;
+}
 
+.svg {
+  position: absolute;
+  z-index: 1;
+}
+
+.jp {
+  position: absolute;
+  z-index: 0;
+  font-size: 1.5rem;
+}
+
+#iceberg-group {
+  position: absolute;
+  right: calc(4rem + 300px);
+  top: 0;
+
+  svg {
+  }
+
+  span {
+    left: 20px;
+  }
+}
+
+#vines-group {
+  position: absolute;
+  left: 35%;
+  top: 10%;
+
+  svg {
+  }
+
+  span {
+  }
+}
+
+#rock-group {
+  position: absolute;
+  left: 50%;
+  bottom: calc(2rem + 300px);
+
+  svg {
+  }
+
+  span {
+  }
+}
+
+#paper-group {
+  position: absolute;
+  left: 2rem;
+  top: 40%;
+
+  svg {
+  }
+
+  span {
+  }
 }

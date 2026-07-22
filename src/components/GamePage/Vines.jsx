@@ -4,7 +4,7 @@ import "../../css/Sigil.scss";
 
 function Vines({ cleared }) {
   return (
-    <>
+    <div id="vines-group">
       <svg className="svg" id="vines" viewBox="0 0 180.94676 136.75958" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs1" />
         <g id="vines-covered" style={cleared ? { display: "none" } : { display: "inline" }} transform="translate(-7.9097169,-58.890239)">
@@ -143,7 +143,7 @@ function Vines({ cleared }) {
         {/* Congrats */}
         {<RubyFunc version={4} />}
       </span>
-    </>
+    </div>
   );
 }
 
