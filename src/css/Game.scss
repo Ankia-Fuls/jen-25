@@ -10,7 +10,8 @@ $bp-m: 700px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 50rem;
+  // width: 50rem;
+  width: clamp(30rem, 41.67%, 50rem);
   height: 12rem;
   background-color: hsl(from var(--bg-colour) h calc(s + 10) l);
   padding: 1rem;
@@ -153,6 +154,7 @@ button {
     left: 3.8rem;
     top: 6rem;
     font-size: 1.8rem;
+
   }
 }
 
@@ -220,71 +222,102 @@ button {
 }
 
 #mindwipe {
-  left: 2rem;
+  // left: 2rem;
   bottom: 2rem;
-  width: 10rem;
+  // width: 10rem;
   height: 10rem;
+
+  left: 1.6%;
+  width: clamp(7rem, 8.3%, 10rem);
+
 }
 
 #grasping-wind {
-  left: 20rem;
+  // left: 20rem;
   bottom: 7rem;
-  width: 15rem;
+  // width: 15rem;
   height: 15rem;
+
+  left: 16.67%;
+  width: clamp(11rem, 12.5%, 15rem);
 }
 
 #light {
-  left: 33rem;
+  // left: 33rem;
   top: 23rem;
-  width: 12rem;
+  // width: 12rem;
   height: 12rem;
+
+  left: 27.5%;
+  width: clamp(9rem, 10%, 12rem);
 }
 
 #pyreball {
-  left: 57rem;
+  // left: 57rem;
   bottom: 7rem;
-  width: 16rem;
+  // width: 16rem;
   height: 16rem;
+
+  left: 47.5%;
+  width: clamp(10rem, 13.3%, 16rem);
 }
 
 #rock-breaker {
-  left: 67rem;
+  // left: 67rem;
   top: 24rem;
-  width: 10rem;
+  // width: 10rem;
   height: 10rem;
+
+  left: 55.83%;
+  width: clamp(8rem, 8.3%, 10rem);
 }
 
 #SBOS {
-  left: 68rem;
+  // left: 68rem;
   top: 3rem;
-  width: 20rem;
+  // width: 20rem;
   height: 20rem;
+
+  left: 56.67%;
+  width: clamp(15rem, 16.67%, 20rem);
 }
 
 #snugstone {
-  left: 90rem;
+  // left: 90rem;
   top: 20rem;
-  width: 18rem;
+  // width: 18rem;
   height: 18rem;
+
+  left: 75%;
+  width: clamp(15rem, 15%, 18rem);
 }
 
 #sylphshoes {
-  right: 7rem;
+  // right: 7rem;
   bottom: 3rem;
-  width: 14rem;
+  // width: 14rem;
   height: 14rem;
+
+  right: 5.83%;
+  width: clamp(10rem, 11.67%, 14rem);
 }
 
 #time-rewind {
-  left: 41rem;
+  // left: 41rem;
   bottom: 10rem;
-  width: 12rem;
+  // width: 12rem;
   height: 12rem;
+
+  left: 34.17%;
+  width: clamp(9rem, 10%, 12rem);
 }
 
 #water-blade {
-  left: 53rem;
+  // left: 53rem;
   top: 3rem;
-  width: 12rem;
+  // width: 12rem;
   height: 12rem;
+
+  left: 44.17%;
+  width: clamp(9rem, 10%, 12rem);
 }
