@@ -46,55 +46,55 @@ function Game({ setState }) {
       "incorrect":
       {
         "rockbreaker": "I don't think ice counts as rock...",
-        "graspingwind": "I don't think ice counts as rock...",
-        "timerewind": "I don't think ice counts as rock...",
-        "snugstone": "I don't think ice counts as rock...",
-        "waterblade": "I don't think ice counts as rock...",
-        "lightseal": "I don't think ice counts as rock...",
-        "sylphshoes": "I don't think ice counts as rock...",
-        "serpentbed": "Putting it to sleep is interesting"
+        "graspingwind": "It's a bit big to be pulled...",
+        "timerewind": "Do icebergs start as something else?",
+        "snugstone": "Maybe a bit more amplification would work?",
+        "waterblade": "Fighting ice with water, I like it.",
+        "lightseal": "It's...lighter now I guess.",
+        "sylphshoes": "Do icebergs have feet?",
+        "serpentbed": "Putting it to sleep is... interesting."
       }
     },
     "vines": {
       "correct": "graspingwind",
       "incorrect":
       {
-        "rockbreaker": "I don't think ice counts as rock...",
-        "pyreball": "I don't think ice counts as rock...",
-        "snugstone": "I don't think ice counts as rock...",
-        "timerewind": "I don't think ice counts as rock...",
-        "waterblade": "I don't think ice counts as rock...",
-        "lightseal": "I don't think ice counts as rock...",
-        "sylphshoes": "I don't think ice counts as rock...",
-        "serpentbed": "Putting it to sleep is interesting"
+        "rockbreaker": "A bit violent for a plant.",
+        "pyreball": "Don't just burn it you heathen!",
+        "snugstone": "It's more comfy now I guess...",
+        "timerewind": "Were you hoping for a seed?",
+        "waterblade": "It's wet.",
+        "lightseal": "Baby you light up my plants like nobody else!",
+        "sylphshoes": "How would they even wear it?",
+        "serpentbed": "Can plants sleep?"
       }
     },
     "rock": {
       "correct": "rockbreaker",
       "incorrect":
       {
-        "pyreball": "I don't think ice counts as rock...",
-        "graspingwind": "I don't think ice counts as rock...",
-        "snugstone": "I don't think ice counts as rock...",
-        "timerewind": "I don't think ice counts as rock...",
-        "waterblade": "I don't think ice counts as rock...",
-        "lightseal": "I don't think ice counts as rock...",
-        "sylphshoes": "I don't think ice counts as rock...",
-        "serpentbed": "Putting it to sleep is interesting"
+        "pyreball": "It's scorched now I guess.",
+        "graspingwind": "It's too heavy to pull.",
+        "snugstone": "It feels comfy, but remains in place.",
+        "timerewind": "I think it was still a rock a day ago...",
+        "waterblade": "It glances off the surface, leaving it slightly wet...",
+        "lightseal": "Shiny! Still there though.",
+        "sylphshoes": "DIY catapult! There is surely an easier way.",
+        "serpentbed": "A sleeping rock! Cute?"
       }
     },
     "paper": {
       "correct": "timerewind",
       "incorrect":
       {
-        "rockbreaker": "I don't think ice counts as rock...",
-        "pyreball": "I don't think ice counts as rock...",
-        "graspingwind": "I don't think ice counts as rock...",
-        "snugstone": "I don't think ice counts as rock...",
-        "waterblade": "I don't think ice counts as rock...",
-        "lightseal": "I don't think ice counts as rock...",
-        "sylphshoes": "I don't think ice counts as rock...",
-        "serpentbed": "Putting it to sleep is interesting"
+        "rockbreaker": "So violent! The poor paper.",
+        "pyreball": "Don't just burn it, you'll ruin the word!",
+        "graspingwind": "It moved, what now?",
+        "snugstone": "It is warm to the touch, still unreadable though.",
+        "waterblade": "Water will ruin the ink!",
+        "lightseal": "...",
+        "sylphshoes": "...really?",
+        "serpentbed": "Whatever man, put that paper to bed, why not?"
       }
     }
   };

@@ -13,7 +13,7 @@ function App() {
     if (state === 3) {
       setTimeout(() => {
         setState(0);
-      }, 5000)
+      }, 3100)
     }
   }, [state])
 
