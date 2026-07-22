@@ -48,6 +48,34 @@ body,
 .svg {
   width: 300px;
   height: 300px;
+
+  transition: all ease-in-out 0.05s;
+
+  &--chosen {
+
+    filter: drop-shadow(0 0 3px white);
+
+    .stroke {
+      stroke: #95ff95;
+    }
+
+    .fill {
+      stroke: #95ff95;
+      fill: #95ff95;
+    }
+  }
+
+  &--inert {
+
+    .stroke {
+      stroke: #4e4e4e;
+    }
+
+    .fill {
+      stroke: #4e4e4e;
+      fill: #4e4e4e;
+    }
+  }
 }
 
 .text {

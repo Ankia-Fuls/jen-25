@@ -107,7 +107,6 @@ function Game({ setState }) {
     setTimeout(() => {
       setState(2);
     }, 1000)
-    // maybe add small timer before setting to see effects
   };
 
   // Reset to start page
@@ -119,11 +118,26 @@ function Game({ setState }) {
   const select = (selected) => {
     if (selectedSigil) {
       // sigil already in storage
-      // reset the selected styling
+      const temp_clear = {
+        'rockbreaker': 'svg',
+        'graspingwind': 'svg',
+        'pyreball': 'svg',
+        'timerewind': 'svg',
+        'snugstone': 'svg',
+        'waterblade': 'svg',
+        'lightseal': 'svg',
+        'sylphshoes': 'svg',
+        'serpentbed': 'svg',
+      };
+      temp_clear[selected] = "svg svg--chosen";
+      setStyles(temp_clear);
     }
-
-    // set styling
-    // set selectedSigil variable
+    else {
+      const temp = {}
+      temp[selected] = "svg svg--chosen";
+      setStyles({ ...styles, ...temp });
+    }
+    setSelectedSigil(selected);
   }
 
   const action = (selected) => {
@@ -147,8 +161,25 @@ function Game({ setState }) {
   }
 
   const clearSelection = () => {
-    // clear selected styling
-    // clear selected variable
+    setStyles({
+      'rockbreaker': 'svg',
+      'graspingwind': 'svg',
+      'pyreball': 'svg',
+      'timerewind': 'svg',
+      'snugstone': 'svg',
+      'waterblade': 'svg',
+      'lightseal': 'svg',
+      'sylphshoes': 'svg',
+      'serpentbed': 'svg'
+    });
+    setCleared({
+      rock: 0,
+      vines: 0,
+      paper: 0,
+      iceberg: 0
+    });
+    setDisplayText("Uncover the hidden words...");
+    setSelectedSigil("");
   }
 
 
