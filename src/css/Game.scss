@@ -56,9 +56,6 @@ button {
   left: 50rem;
   top: 15rem;
 
-  svg {
-  }
-
   span {
   }
 }
@@ -68,10 +65,11 @@ button {
   left: 78rem;
   bottom: calc(7rem + 300px);
 
-  svg {
-  }
-
   span {
+    z-index: 2;
+    left: 6rem;
+    top: 6rem;
+    width: 3rem;
   }
 }
 
@@ -79,9 +77,6 @@ button {
   position: absolute;
   left: 7rem;
   top: 17rem;
-
-  svg {
-  }
 
   span {
   }
