@@ -57,10 +57,8 @@ function Rock({ setState }) {
       </svg>
       <span className="jp">
         {/* 25 years */}
-        {<RubyFunc kanji="二" text="に" />}
-        {<RubyFunc kanji="十" text="じゅう" />}
-        {<RubyFunc kanji="五" text="ご" />}
-        {<RubyFunc kanji="歳" text="さい" />}
+        {<RubyFunc version={3} />}
+
       </span>
     </>
   );

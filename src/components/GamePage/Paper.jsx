@@ -79,9 +79,7 @@ function Paper({ setState }) {
       </svg>
       <span className="jp">
         {/* birthday */}
-        {<RubyFunc kanji="誕" text="たん" />}
-        {<RubyFunc kanji="生" text="じょう" />}
-        {<RubyFunc kanji="日" text="び" />}
+        {<RubyFunc version={2} />}
       </span>
     </>
   );

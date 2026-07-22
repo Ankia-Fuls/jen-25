@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import RubyFunc from "../Functions/rubyFunction.jsx";
 import "../../css/Sigil.scss";
 
 function Vines({ setState }) {
@@ -140,7 +141,7 @@ function Vines({ setState }) {
       </svg>
       <span className="jp">
         {/* Congrats */}
-        おめでとう
+        {<RubyFunc version={4} />}
       </span>
     </>
   );

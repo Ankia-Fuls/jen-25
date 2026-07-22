@@ -46,7 +46,7 @@ function Iceberg({ setState }) {
       </svg>
       <span className="jp">
         {/* Your */}
-        {<RubyFunc kanji="君" text="きみ" />}の
+        {<RubyFunc version={1} />}
       </span>
     </>
   );
