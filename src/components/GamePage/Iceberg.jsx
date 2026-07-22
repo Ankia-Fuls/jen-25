@@ -45,8 +45,7 @@ function Iceberg({ cleared }) {
         </g>
       </svg>
       <span className="jp" style={cleared ? { display: "inline" } : { display: "none" }}>
-        {/* Your */}
-        {<RubyFunc version={1} />}
+        {<RubyFunc version={3} />}
       </span>
     </div>
   );
