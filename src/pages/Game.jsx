@@ -31,10 +31,10 @@ function Game({ setState }) {
   });
 
   const [cleared, setCleared] = useState({
-    rock: 0,
+    rock: 1,
     vines: 0,
-    paper: 1,
-    iceberg: 0,
+    paper: 0,
+    iceberg: 1,
   });
 
   const [displayText, setDisplayText] = useState("Uncover the hidden words...");

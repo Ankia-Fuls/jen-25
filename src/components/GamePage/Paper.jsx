@@ -77,7 +77,7 @@ function Paper({ cleared }) {
           <path d="m 92.213649,88.507821 -0.912612,0.281601 -1.278036,0.971082 -1.929294,3.835815 6.660286,8.518491 3.855894,-3.693157 z" id="path274" className="paper fold6" />
         </g>
       </svg>
-      <span className="jp">
+      <span className="jp" style={cleared ? { display: "inline" } : { display: "none" }}>
         {/* birthday */}
         {<RubyFunc version={2} />}
       </span>

@@ -55,7 +55,7 @@ function Rock({ cleared }) {
           </g>
         </g>
       </svg>
-      <span className="jp">
+      <span className="jp" style={cleared ? { display: "inline" } : { display: "none" }}>
         {/* 25 years */}
         {<RubyFunc version={3} />}
       </span>
