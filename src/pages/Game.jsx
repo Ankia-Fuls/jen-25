@@ -96,9 +96,6 @@ function Game({ setState }) {
     },
   };
 
-  // correctStates.{iceberg}.correct === {pyreball}
-  // else textdisplay = correctStates.{iceberg}.incorrect.{sigil}
-
   // Complete game, move on to final page
   const done = () => {
     setTimeout(() => {

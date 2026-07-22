@@ -25,42 +25,48 @@ $bp-m: 700px;
 @keyframes first-correct {
   from {
     width: 0;
+    background-color: aliceblue;
   }
 
   to {
     width: 25%;
+    background-color: var(--correct-meter);
   }
 }
 
 @keyframes second-correct {
   from {
     width: 25%;
+    background-color: var(--correct-meter);
   }
 
   to {
     width: 50%;
+    background-color: var(--correct-meter2);
   }
 }
 
 @keyframes third-correct {
   from {
     width: 50%;
+    background-color: var(--correct-meter2);
   }
 
   to {
     width: 75%;
+    background-color: var(--correct-meter3);
   }
 }
 
 @keyframes last-correct {
   from {
     width: 75%;
-    background-color: var(--correct-meter);
+    background-color: var(--correct-meter3);
   }
 
   to {
     width: 100%;
-    background-color: var(--correct-meter2);
+    background-color: var(--correct-meter4);
   }
 }
 
@@ -136,8 +142,11 @@ button {
 
 #iceberg-group {
   position: absolute;
-  right: calc(4rem + 300px);
+
+  // right: calc(4rem + 300px);
   top: 0;
+
+  right: 18.95%;
 
   span {
     width: 10rem;
@@ -149,8 +158,11 @@ button {
 
 #vines-group {
   position: absolute;
-  left: 47rem;
-  top: 15rem;
+  // left: 47rem;
+  // top: 15rem;
+
+  left: 40%;
+  top: 25.15%;
 
   span {
     height: 10rem;
@@ -166,8 +178,11 @@ button {
 
 #rock-group {
   position: absolute;
-  left: 78rem;
-  bottom: calc(7rem + 300px);
+  // left: 78rem;
+  // bottom: calc(7rem + 300px);
+
+  left: 65%;
+  bottom: 43.2%;
 
   span {
     z-index: 2;
@@ -180,8 +195,11 @@ button {
 
 #paper-group {
   position: absolute;
-  left: 7rem;
-  top: 17rem;
+  // left: 7rem;
+  // top: 17rem;
+
+  left: 5.8%;
+  top: 28.5%;
 
   // svg {
   //   &:has(#folded-paper) {
