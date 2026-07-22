@@ -39,6 +39,7 @@ function Game({ setState }) {
 
   const [displayText, setDisplayText] = useState("Uncover the hidden words...");
   const [selectedSigil, setSelectedSigil] = useState("");
+  const [amountCorrect, setAmountCorrect] = useState(0);
 
   const correctStates = {
     iceberg: {
@@ -102,11 +103,13 @@ function Game({ setState }) {
   const done = () => {
     setTimeout(() => {
       setState(2);
+      clearSelection();
     }, 1000);
   };
 
   // Reset to start page
   const reset = () => {
+    clearSelection();
     setState(3);
   };
 
@@ -114,19 +117,10 @@ function Game({ setState }) {
   const select = (selected) => {
     if (selectedSigil) {
       // sigil already in storage
-      const temp_clear = {
-        rockbreaker: "svg",
-        graspingwind: "svg",
-        pyreball: "svg",
-        timerewind: "svg",
-        snugstone: "svg",
-        waterblade: "svg",
-        lightseal: "svg",
-        sylphshoes: "svg",
-        serpentbed: "svg",
-      };
+      const temp_clear = {};
+      temp_clear[selectedSigil] = "svg";
       temp_clear[selected] = "svg svg--chosen";
-      setStyles(temp_clear);
+      setStyles({ ...styles, ...temp_clear });
     } else {
       const temp = {};
       temp[selected] = "svg svg--chosen";
@@ -136,12 +130,13 @@ function Game({ setState }) {
   };
 
   const action = (selected) => {
+    // check if sigil selected
     if (selectedSigil) {
-      // check if sigil selected
       // check if sigil is correct - call function if correct
       if (correctStates[selected].correct === selectedSigil) {
         correct(selectedSigil, selected);
       }
+
       // else call clear function and update display text with funny quip
       else {
         const temp = correctStates[selected].incorrect[selectedSigil] || "What?";
@@ -165,10 +160,27 @@ function Game({ setState }) {
 
   const correct = (sigil, icon) => {
     // set icon se clear variables vir display
-    // set die sigil se css om uit te grey
-    // check if all 4 done - if yes, run done function
-    // run clearing function to reset all variables to initial state
-    // reset message
+    const temp = {};
+    temp[icon] = 1;
+    setCleared({ ...cleared, ...temp });
+
+    // increment counter
+    const amount = amountCorrect + 1;
+    setAmountCorrect(amount);
+
+    // Display correct
+    setDisplayText("Correct!");
+    setSelectedSigil("");
+
+    // Clear die selected sigil se styling
+    const temp_clear = {};
+    temp_clear[selectedSigil] = "svg";
+    setStyles({ ...styles, ...temp_clear });
+
+    // if all done, complete game
+    if (amount === 4) {
+      done();
+    }
   };
 
   const clearSelection = () => {
@@ -191,6 +203,7 @@ function Game({ setState }) {
     });
     setDisplayText("Uncover the hidden words...");
     setSelectedSigil("");
+    setAmountCorrect(0);
   };
 
   return (
