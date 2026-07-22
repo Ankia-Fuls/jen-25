@@ -1,0 +1,170 @@
+@keyframes fadeIn1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn6 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.6;
+    }
+}
+
+@keyframes fadeIn7 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.7;
+    }
+}
+
+@keyframes fadeIn8 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
+
+@keyframes fadeIn9 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.9;
+    }
+}
+
+
+.reset {
+    &__page {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background-color: black;
+    }
+
+    &__main {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(180, 0, 0);
+
+        font-size: 20rem;
+        opacity: 0;
+
+        animation: fadeIn1 0.1s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 2.5s;
+    }
+
+    &__item {
+        position: absolute;
+        font-size: 5rem;
+        text-transform: uppercase;
+        opacity: 0;
+
+        &:nth-of-type(1) {
+            left: 5%;
+            top: 25%;
+            font-size: 4rem;
+
+            animation: fadeIn7 0.1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            animation-delay: 0.2s;
+        }
+
+        &:nth-of-type(2) {
+            left: 35%;
+            top: 70%;
+            font-size: 5rem;
+
+            animation: fadeIn9 0.1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            animation-delay: 0.9s;
+        }
+
+        &:nth-of-type(3) {
+            left: 70%;
+            top: 7%;
+            font-size: 2rem;
+
+            animation: fadeIn8 0.1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            animation-delay: 1.5s;
+        }
+
+        &:nth-of-type(4) {
+            left: 75%;
+            top: 85%;
+            font-size: 3rem;
+
+            animation: fadeIn9 0.1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            animation-delay: 1.8s;
+        }
+
+        &:nth-of-type(5) {
+            left: 5%;
+            top: 70%;
+            font-size: 6rem;
+
+            animation: fadeIn8 0.1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+        }
+
+        &:nth-of-type(6) {
+            left: 50%;
+            top: 25%;
+            font-size: 3rem;
+
+            animation: fadeIn6 0.1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            animation-delay: 2.2s;
+        }
+
+        &:nth-of-type(7) {
+            left: 20%;
+            top: 5%;
+            font-size: 7rem;
+
+            animation: fadeIn7 0.1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            animation-delay: 2.3s;
+        }
+
+        &:nth-of-type(8) {
+            left: 80%;
+            top: 50%;
+            font-size: 3rem;
+
+            animation: fadeIn7 0.1s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            animation-delay: 2.4s;
+        }
+    }
+}

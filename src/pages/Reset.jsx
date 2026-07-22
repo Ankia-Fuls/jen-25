@@ -1,11 +1,20 @@
 import { useState } from "react";
+import "../css/Reset.scss";
 
 function Reset() {
 
     return (
-        <>
-            <h1>Reset</h1>
-        </>
+        <section className="reset__page">
+            <h1 className="reset__main">FORGET</h1>
+            <p className="reset__item">forget</p>
+            <p className="reset__item">forget</p>
+            <p className="reset__item">forget</p>
+            <p className="reset__item">forget</p>
+            <p className="reset__item">forget</p>
+            <p className="reset__item">forget</p>
+            <p className="reset__item">forget</p>
+            <p className="reset__item">forget</p>
+        </section>
     );
 }
 
