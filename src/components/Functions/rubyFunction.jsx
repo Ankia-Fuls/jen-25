@@ -1,163 +1,174 @@
 function RubyFunc({ version, showArray }) {
-
   const japaneseArray1 = [
     { kanji: "君", text: "kimi", furi: "きみ" },
-    { kanji: "の", text: "no", furi: "" }
+    { kanji: "は", text: "wa", furi: "" },
   ];
   const japaneseArray2 = [
     { kanji: "二", text: "ni", furi: "に" },
     { kanji: "十", text: "jū", furi: "じゅう" },
     { kanji: "五", text: "go", furi: "ご" },
-    { kanji: "歳", text: "sai", furi: "さい" }
+    { kanji: "歳", text: "sai", furi: "さい" },
   ];
-  const japaneseArray3 = [
-    { kanji: "の", text: "no", furi: "" }
-  ];
+  const japaneseArray3 = [{ kanji: "の", text: "no", furi: "" }];
   const japaneseArray4 = [
     { kanji: "誕", text: "tan", furi: "たん" },
     { kanji: "生", text: "jō", furi: "じょう" },
-    { kanji: "日", text: "bi", furi: "び" }
+    { kanji: "日", text: "bi", furi: "び" },
   ];
-  const japaneseArray5 = [
-    { kanji: "を", text: "wo", furi: "" }
-  ];
+  const japaneseArray5 = [{ kanji: "を", text: "wo", furi: "" }];
   const japaneseArray6 = [
     { kanji: "お", text: "o", furi: "" },
     { kanji: "め", text: "me", furi: "" },
     { kanji: "で", text: "de", furi: "" },
-    { kanji: "とう", text: "tō", furi: "" }
+    { kanji: "とう", text: "tō", furi: "" },
   ];
   const japaneseArray7 = [
     { kanji: "ご", text: "go", furi: "" },
     { kanji: "ざ", text: "za", furi: "" },
     { kanji: "い", text: "i", furi: "" },
     { kanji: "ま", text: "ma", furi: "" },
-    { kanji: "す", text: "su", furi: "" }
+    { kanji: "す", text: "su", furi: "" },
   ];
 
   return (
     <>
-      {(version === 0) && (
-        <span>
-          <span style={showArray[0] ? { opacity: "1" } : { opacity: "0", borderBottom: "1px solid white" }}>
-            {japaneseArray1.map((item) =>
-              <ruby>
+      {version === 0 && (
+        <>
+          <button>
+            {japaneseArray1.map((item) => (
+              <ruby style={showArray[0] ? { opacity: 1 } : { opacity: 0 }}>
                 {item.kanji}
                 <rp>(</rp>
                 <rt>{item.text}</rt>
                 <rp>)</rp>
-              </ruby>)}
-          </span >
+              </ruby>
+            ))}
+
+            {showArray[0] === 0 && <span className="empty">----</span>}
+          </button>
           {/**/}
-          <span style={showArray[1] ? { opacity: "1" } : { opacity: "0" }}>
-            {japaneseArray2.map((item) =>
-              <ruby>
+          <button>
+            {japaneseArray2.map((item) => (
+              <ruby style={showArray[1] ? { opacity: 1 } : { opacity: 0 }}>
                 {item.kanji}
                 <rp>(</rp>
                 <rt>{item.text}</rt>
                 <rp>)</rp>
-              </ruby>)}
-          </span >
+              </ruby>
+            ))}
+            {showArray[1] === 0 && <span className="empty">----</span>}
+          </button>
           <span>
-            {japaneseArray3.map((item) =>
+            {japaneseArray3.map((item) => (
               <ruby>
                 {item.kanji}
                 <rp>(</rp>
                 <rt>{item.text}</rt>
                 <rp>)</rp>
-              </ruby>)}
-          </span >
+              </ruby>
+            ))}
+          </span>
           {/**/}
-          <span style={showArray[2] ? { opacity: "1" } : { opacity: "0" }}>
-            {japaneseArray4.map((item) =>
-              <ruby>
+          <button>
+            {japaneseArray4.map((item) => (
+              <ruby style={showArray[2] ? { opacity: 1 } : { opacity: 0 }}>
                 {item.kanji}
                 <rp>(</rp>
                 <rt>{item.text}</rt>
                 <rp>)</rp>
-              </ruby>)}
-          </span >
+              </ruby>
+            ))}
+            {showArray[2] === 0 && <span className="empty">----</span>}
+          </button>
           <span>
-            {japaneseArray5.map((item) =>
+            {japaneseArray5.map((item) => (
               <ruby>
                 {item.kanji}
                 <rp>(</rp>
                 <rt>{item.text}</rt>
                 <rp>)</rp>
-              </ruby>)}
-          </span >
+              </ruby>
+            ))}
+          </span>
           {/**/}
-          <span style={showArray[3] ? { opacity: "1" } : { opacity: "0" }}>
-            {japaneseArray6.map((item) =>
-              <ruby>
+          <button>
+            {japaneseArray6.map((item) => (
+              <ruby style={showArray[3] ? { opacity: 1 } : { opacity: 0 }}>
                 {item.kanji}
                 <rp>(</rp>
                 <rt>{item.text}</rt>
                 <rp>)</rp>
-              </ruby>)}
-          </span >
+              </ruby>
+            ))}
+            {showArray[3] === 0 && <span className="empty">----</span>}
+          </button>
           {/**/}
           <span>
-            {japaneseArray7.map((item) =>
+            {japaneseArray7.map((item) => (
               <ruby>
                 {item.kanji}
                 <rp>(</rp>
                 <rt>{item.text}</rt>
                 <rp>)</rp>
-              </ruby>)}
-          </span >
+              </ruby>
+            ))}
+          </span>
+        </>
+      )}
 
-        </span>)}
-
-      {(version === 1) && (
+      {version === 1 && (
         <span>
-          {japaneseArray1.map((item) =>
+          {japaneseArray1.map((item) => (
             <ruby>
               {item.kanji}
               <rp>(</rp>
               <rt>{item.furi}</rt>
               <rp>)</rp>
-            </ruby>)}
-        </span >
+            </ruby>
+          ))}
+        </span>
       )}
 
-      {(version === 2) && (
+      {version === 2 && (
         <span>
-          {japaneseArray4.map((item) =>
+          {japaneseArray4.map((item) => (
             <ruby>
               {item.kanji}
               <rp>(</rp>
               <rt>{item.furi}</rt>
               <rp>)</rp>
-            </ruby>)}
-        </span >
+            </ruby>
+          ))}
+        </span>
       )}
 
-      {(version === 3) && (
+      {version === 3 && (
         <span>
-          {japaneseArray2.map((item) =>
+          {japaneseArray2.map((item) => (
             <ruby>
               {item.kanji}
               <rp>(</rp>
               <rt>{item.furi}</rt>
               <rp>)</rp>
-            </ruby>)}
-        </span >
+            </ruby>
+          ))}
+        </span>
       )}
 
-      {(version === 4) && (
+      {version === 4 && (
         <span>
-          {japaneseArray6.map((item) =>
+          {japaneseArray6.map((item) => (
             <ruby>
               {item.kanji}
               <rp>(</rp>
               <rt>{item.furi}</rt>
               <rp>)</rp>
-            </ruby>)}
-        </span >
+            </ruby>
+          ))}
+        </span>
       )}
-    </>)
+    </>
+  );
 }
-
 
 export default RubyFunc;

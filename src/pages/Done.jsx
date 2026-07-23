@@ -12,14 +12,26 @@ function Done({ setState }) {
 
   return (
     <section className="done-page">
-      <h1>Done</h1>
-      <span className="jp">
-        {/* Happy 25th birthday */}
+      {/* Happy 25th birthday */}
 
+      <span className="jp" id="full-text">
         <RubyFunc version={0} showArray={display} />
-
-        <button onClick={done}>Reset</button>
       </span>
+
+      <button className="jp" id="text-1">
+        <RubyFunc version={1} showArray={display} />
+      </button>
+      <button className="jp" id="text-2">
+        <RubyFunc version={2} showArray={display} />
+      </button>
+      <button className="jp" id="text-3">
+        <RubyFunc version={3} showArray={display} />
+      </button>
+      <button className="jp" id="text-4">
+        <RubyFunc version={4} showArray={display} />
+      </button>
+
+      <button onClick={done}>Reset</button>
     </section>
   );
 }

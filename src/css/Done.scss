@@ -1,7 +1,77 @@
 $bp-m: 700px;
 
 .done-page {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: absolute;
+}
+
+button:has(span),
+button:has(ruby) {
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+#full-text {
+  font-size: 5rem;
+  user-select: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  line-height: 15rem;
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-align: left;
+
+  rt {
+    writing-mode: horizontal-tb;
+  }
+
+  button {
+    position: relative;
+
+    .empty {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+button.jp {
+  font-size: 2rem;
+  background-color: hsl(from var(--bg-colour) h calc(s + 10) l);
+  padding: 1rem;
+  border: 0.25rem solid red;
+  border-radius: 2rem;
+  //   width: 8rem;
+  //   height: 3rem;
+}
+
+#text-1 {
+  right: 10%;
+  top: 15%;
+  transform: translate(50%, -50%);
+}
+
+#text-2 {
+  left: 10%;
+  bottom: 15%;
+  transform: translate(-50%, 50%);
+}
+
+#text-3 {
+  left: 10%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+}
+
+#text-4 {
+  right: 10%;
+  bottom: 15%;
+  transform: translate(50%, 50%);
 }
