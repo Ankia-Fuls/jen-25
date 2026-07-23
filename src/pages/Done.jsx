@@ -1,4 +1,6 @@
 import { useState } from "react";
+import "../css/Done.scss";
+
 import RubyFunc from "../components/Functions/rubyFunction.jsx";
 
 function Done({ setState }) {
@@ -6,9 +8,8 @@ function Done({ setState }) {
     setState(3);
   };
 
-
   return (
-    <>
+    <section className="done-page">
       <h1>Done</h1>
       <span className="jp">
         {/* Happy 25th birthday */}
@@ -17,7 +18,7 @@ function Done({ setState }) {
 
         <button onClick={done}>Reset</button>
       </span>
-    </>
+    </section>
   );
 }
 
