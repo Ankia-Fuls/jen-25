@@ -50,6 +50,10 @@ button.jp {
   border-radius: 2rem;
   //   width: 8rem;
   //   height: 3rem;
+
+  &--chosen {
+    background-color: red;
+  }
 }
 
 #text-1 {
