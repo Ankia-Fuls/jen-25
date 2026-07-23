@@ -1,0 +1,148 @@
+/* HATS */
+
+.hat {
+    fill-opacity: 1;
+    stroke: var(--black);
+    stroke-width: 0.404283;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 0;
+    stroke-opacity: 1;
+}
+
+.hat-taper {
+    fill-opacity: 1;
+    fill-rule: nonzero;
+    stroke: none;
+    stroke-width: 0.404283;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 0;
+    stroke-opacity: 1;
+    fill: var(--black);
+
+}
+
+.q-hat-base {
+    fill: var(--grey-base);
+}
+
+.q-hat-white {
+    fill: var(--white-base);
+}
+
+.hat-gold {
+    fill: var(--hat-gold);
+}
+
+.black1 {
+    fill: var(--hat-black-1);
+}
+
+.black2 {
+    fill: var(--hat-black-2);
+}
+
+.hat-teal {
+    fill: var(--hat-teal);
+}
+
+/* STARS */
+.star {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0px 0px 2px var(--hat-gold));
+}
+
+/* BRUSHBUDDIES */
+
+.bb {
+    opacity: 1;
+    fill-opacity: 1;
+    /* fill: none; */
+    stroke: var(--black);
+    stroke-width: 2.504;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 0;
+    stroke-dasharray: none;
+    stroke-opacity: 1
+}
+
+.fur {
+    fill: var(--bb-fur);
+}
+
+.eyes {
+    fill: var(--white);
+}
+
+.eyes-thin {
+    fill: var(--white);
+    stroke-width: 0.808088;
+}
+
+.eyes-thin2 {
+    fill: var(--white);
+    stroke-width: 1.82917;
+}
+
+.pupil {
+    fill: var(--black);
+}
+
+.pupil-thin {
+    fill: var(--black);
+    stroke-width: 0.808088;
+}
+
+.thin {
+    stroke-width: 1.4801;
+}
+
+.flower {
+    opacity: 1;
+    fill-opacity: 1;
+    stroke: var(--black);
+    stroke-width: 0.85;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 0;
+    stroke-dasharray: none;
+    stroke-opacity: 1;
+}
+
+.flower-red1 {
+    fill: var(--flower1);
+}
+
+.flower-red2 {
+    fill: var(--flower2);
+    stroke: none;
+}
+
+.flower-green1 {
+    fill: var(--flower3);
+}
+
+.flower-green2 {
+    fill: var(--flower4);
+}
+
+/* GIRLS */
+
+.girls {
+    fill: none;
+    fill-opacity: 1;
+    stroke: var(--black);
+    stroke-width: 1.604;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 0;
+    stroke-dasharray: none;
+    stroke-opacity: 1
+}
+
+.girls-fill {
+    fill: var(--black);
+}
