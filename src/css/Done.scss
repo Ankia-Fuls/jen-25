@@ -45,15 +45,28 @@ button:has(ruby) {
 button.jp {
   font-size: 2rem;
   background-color: hsl(from var(--bg-colour) h calc(s + 10) l);
-  padding: 1rem;
-  border: 0.25rem solid red;
-  border-radius: 2rem;
+  // padding: 1rem 1.5rem;
+  border: 0.25rem solid var(--hat-teal);
+  border-radius: 0.5rem 1.5rem;
+
+  width: 15rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   //   width: 8rem;
   //   height: 3rem;
 
-  &--chosen {
-    background-color: red;
+  &:nth-of-type(odd) {
+    border-radius: 1.5rem 0.5rem;
   }
+
+  &--chosen {
+    background-color: var(--hat-teal);
+    border-color: var(--hat-gold);
+  }
+
 }
 
 #text-1 {

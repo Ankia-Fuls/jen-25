@@ -19,6 +19,22 @@ function Start({ setState }) {
       <span className="starting-message">
         Let the hunt <button onClick={Add}>begin</button>
       </span>
+
+      <span className="bb bb--1">
+        <Brushbuddy2 />
+      </span>
+
+      <span className="bb bb--2">
+        <Brushbuddy3 />
+      </span>
+
+      <span className="bb bb--3">
+        <Brushbuddy1 />
+      </span>
+
+      <span className="">
+
+      </span>
     </section>
   );
 }

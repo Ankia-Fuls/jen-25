@@ -1,3 +1,13 @@
+@keyframes text-pop {
+    from {
+        transform: scale(20%);
+    }
+
+    to {
+        transform: scale(100%);
+    }
+}
+
 .final-page {
     width: 100vw;
     height: 100vh;
@@ -22,6 +32,10 @@
         height: 144px;
         padding: 1rem;
 
+        transform: scale(20%);
+
+        animation: text-pop 1.2s ease-in forwards;
+
         background-color: aliceblue;
         display: flex;
         justify-content: center;
@@ -29,7 +43,7 @@
 
         position: relative;
 
-        border-top: 10px solid rgba(0, 0, 0, 0.808);
+        border-top: 10px solid rgba(0, 0, 0, 0.836);
         border-bottom: 10px solid rgba(0, 0, 0, 0.925);
 
         &::before {

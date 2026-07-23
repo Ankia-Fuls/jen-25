@@ -4,9 +4,6 @@ import "../css/Done.scss";
 import RubyFunc from "../components/Functions/rubyFunction.jsx";
 
 function Done({ setState }) {
-  const done = () => {
-    setState(3);
-  };
 
   const [display, setDisplay] = useState({
     "text-1": 0,
@@ -82,7 +79,9 @@ function Done({ setState }) {
 
   useEffect(() => {
     if (display['text-1'] + display['text-2'] + display['text-3'] + display['text-4'] === 4) {
-      setState(4);
+      setTimeout(() => {
+        setState(4);
+      }, 1000);
     }
   }, [display])
 
@@ -106,8 +105,6 @@ function Done({ setState }) {
       <button className={styles["text-4"]} id="text-4" onClick={() => select("text-4")}>
         <RubyFunc version={4} action={action} />
       </button>
-
-      <button onClick={done}>Reset</button>
     </section>
   );
 }

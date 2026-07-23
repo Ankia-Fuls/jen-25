@@ -22,6 +22,7 @@ $bp-m: 700px;
   justify-content: center;
   align-items: center;
   gap: 10vh;
+  position: relative;
 }
 
 .starting-message {
@@ -66,4 +67,78 @@ $bp-m: 700px;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@keyframes walkies {
+  from {
+    left: 8%;
+  }
+
+  to {
+    left: 70%;
+  }
+}
+
+@keyframes eyes {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  70% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-2px, 1px);
+  }
+}
+
+.starting-page .bb {
+  position: absolute;
+
+  .fur {
+    fill: var(--text-colour);
+  }
+
+  &--1 {
+    top: 45%;
+    left: 33%;
+
+    z-index: -1;
+
+    transform: rotate(45deg);
+
+    .svg {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  &--2 {
+    top: 65%;
+    right: 25%;
+
+    .svg {
+      width: 400px;
+      height: 300px;
+    }
+
+    .pupil-thin {
+      animation: eyes 8s ease-in-out infinite alternate-reverse forwards;
+
+    }
+  }
+
+  &--3 {
+    bottom: 150px;
+    left: 8%;
+
+    animation: walkies 8s ease-in-out infinite alternate-reverse forwards;
+
+    .svg {
+      width: 200px;
+      height: 150px;
+    }
+  }
+
 }
