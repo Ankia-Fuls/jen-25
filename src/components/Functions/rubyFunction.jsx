@@ -167,6 +167,91 @@ function RubyFunc({ version, showArray, action }) {
           ))}
         </span>
       )}
+
+      {version === 5 && (
+        <>
+          <span className="jp-final--1">
+            {japaneseArray1.map((item) => (
+              <ruby>
+                {item.kanji}
+                <rp>(</rp>
+                <rt>{item.text}</rt>
+                <rp>)</rp>
+              </ruby>
+            ))}
+          </span>
+          {/**/}
+          <span className="jp-final--2">
+            <span >
+              {japaneseArray2.map((item) => (
+                <ruby>
+                  {item.kanji}
+                  <rp>(</rp>
+                  <rt>{item.text}</rt>
+                  <rp>)</rp>
+                </ruby>
+              ))}
+            </span>
+            <span>
+              {japaneseArray3.map((item) => (
+                <ruby>
+                  {item.kanji}
+                  <rp>(</rp>
+                  <rt>{item.text}</rt>
+                  <rp>)</rp>
+                </ruby>
+              ))}
+            </span>
+          </span>
+
+          {/**/}
+          <span className="jp-final--3">
+            <span>
+              {japaneseArray4.map((item) => (
+                <ruby>
+                  {item.kanji}
+                  <rp>(</rp>
+                  <rt>{item.text}</rt>
+                  <rp>)</rp>
+                </ruby>
+              ))}
+            </span>
+            <span>
+              {japaneseArray5.map((item) => (
+                <ruby>
+                  {item.kanji}
+                  <rp>(</rp>
+                  <rt>{item.text}</rt>
+                  <rp>)</rp>
+                </ruby>
+              ))}
+            </span>
+          </span>
+
+          {/**/}
+          <span className="jp-final--4">
+            {japaneseArray6.map((item) => (
+              <ruby>
+                {item.kanji}
+                <rp>(</rp>
+                <rt>{item.text}</rt>
+                <rp>)</rp>
+              </ruby>
+            ))}
+          </span>
+          {/**/}
+          <span className="jp-final--5">
+            {japaneseArray7.map((item) => (
+              <ruby>
+                {item.kanji}
+                <rp>(</rp>
+                <rt>{item.text}</rt>
+                <rp>)</rp>
+              </ruby>
+            ))}
+          </span>
+        </>
+      )}
     </>
   );
 }

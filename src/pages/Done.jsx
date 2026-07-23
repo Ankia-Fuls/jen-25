@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../css/Done.scss";
 
 import RubyFunc from "../components/Functions/rubyFunction.jsx";
@@ -78,12 +78,13 @@ function Done({ setState }) {
     const temp_clear = {};
     temp_clear[selectedWord] = "jp";
     setStyles({ ...styles, ...temp_clear });
-
-    // if all done, complete game
-    // if (amount === 4) {
-    //   done();
-    // }
   };
+
+  useEffect(() => {
+    if (display['text-1'] + display['text-2'] + display['text-3'] + display['text-4'] === 4) {
+      setState(4);
+    }
+  }, [display])
 
   return (
     <section className="done-page">

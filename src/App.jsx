@@ -3,6 +3,7 @@ import Start from "./pages/Start";
 import Game from "./pages/Game";
 import Done from "./pages/Done";
 import Reset from "./pages/Reset";
+import Result from "./pages/Result";
 
 import "./css/App.scss";
 
@@ -23,6 +24,7 @@ function App() {
       {state === 1 && <Game setState={setState} />}
       {state === 2 && <Done setState={setState} />}
       {state === 3 && <Reset />}
+      {state === 4 && <Result setState={setState} />}
     </>
   );
 }

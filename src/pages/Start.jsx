@@ -19,7 +19,6 @@ function Start({ setState }) {
       <span className="starting-message">
         Let the hunt <button onClick={Add}>begin</button>
       </span>
-      <Girls />
     </section>
   );
 }

@@ -1,0 +1,223 @@
+.final-page {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+}
+
+.center-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
+    align-items: center;
+
+    .text-wrapper {
+        width: 75vw;
+        min-width: 1200px;
+        height: 144px;
+        padding: 1rem;
+
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        border-top: 10px solid rgba(0, 0, 0, 0.808);
+        border-bottom: 10px solid rgba(0, 0, 0, 0.925);
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 77px solid transparent;
+            border-bottom: 77px solid transparent;
+
+            border-left: 77px solid var(--bg-colour);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-top: 77px solid transparent;
+            border-bottom: 77px solid transparent;
+
+            border-right: 77px solid var(--bg-colour);
+        }
+    }
+
+    h1 {
+        font-size: 5rem;
+        text-align: center;
+
+        background: linear-gradient(144deg, #AF40FF, #5B42F3 20%, #00DDEB);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        // filter: drop-shadow(0 0 5px #000);
+    }
+
+    .jp-final {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        writing-mode: vertical-rl;
+
+        &--2 {
+            padding-top: 3rem;
+        }
+
+        &--4 {
+            padding-top: 3rem;
+        }
+
+        rt {
+            writing-mode: horizontal-tb;
+        }
+
+    }
+
+    ruby {
+        font-family: "Noto Serif JP", serif;
+        font-size: 2.5rem;
+    }
+
+    button {
+        width: 15rem;
+        height: 4.5rem;
+
+        align-items: center;
+        background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+        border: 0;
+        border-radius: 8px;
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        display: flex;
+        font-family: Phantomsans, sans-serif;
+
+        justify-content: center;
+        line-height: 1em;
+        max-width: 100%;
+        min-width: 140px;
+
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        cursor: pointer;
+
+        font-size: 1.1rem;
+        padding: 0.25rem;
+        font-family: "Playwrite ID", cursive; //"Dancing Script", cursive;
+        font-weight: 600;
+        letter-spacing: 0.125rem;
+
+        span {
+            background-color: #05062d;
+            padding: 1.3rem 2rem;
+            border-radius: 0.375rem;
+
+            width: 100%;
+            height: 100%;
+            transition: 300ms;
+        }
+
+        &:hover span {
+            background: none;
+        }
+
+        &:active,
+        &:hover {
+            outline: 0;
+        }
+    }
+}
+
+.final-page .hat {
+    position: absolute;
+
+    .svg {
+        width: 150px;
+        height: 150px;
+    }
+
+    &--qifrey {
+        bottom: 12rem;
+    }
+
+    &--olly {
+        bottom: 12rem;
+        left: 12rem;
+    }
+
+    &--girls {
+        bottom: 23rem;
+        left: 5rem;
+    }
+}
+
+.final-page .star {
+    position: absolute;
+
+    .star {
+        width: 100px;
+        height: 100px;
+
+
+        * {
+            stroke: var(--text-colour);
+            stroke-width: 0.3;
+        }
+
+    }
+
+    &--1 {
+        bottom: 60%;
+        left: 18%;
+        transform: rotate(-30deg);
+    }
+
+    &--2 {
+        bottom: 30%;
+        right: 25%;
+    }
+
+    &--3 {
+        bottom: 18%;
+        left: 33%;
+    }
+}
+
+.final-page .bb {
+    position: absolute;
+
+    .svg {
+        width: 350px;
+        height: 350px;
+
+    }
+
+    .fur {
+        fill: var(--text-colour);
+    }
+
+    &--1 {
+        bottom: 60%;
+        right: 22%;
+    }
+
+}
