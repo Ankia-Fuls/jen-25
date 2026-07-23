@@ -1,4 +1,4 @@
-function RubyFunc({ version }) {
+function RubyFunc({ version, showArray }) {
 
   const japaneseArray1 = [
     { kanji: "君", text: "kimi", furi: "きみ" },
@@ -39,7 +39,7 @@ function RubyFunc({ version }) {
     <>
       {(version === 0) && (
         <span>
-          <span>
+          <span style={showArray[0] ? { opacity: "1" } : { opacity: "0", borderBottom: "1px solid white" }}>
             {japaneseArray1.map((item) =>
               <ruby>
                 {item.kanji}
@@ -49,7 +49,7 @@ function RubyFunc({ version }) {
               </ruby>)}
           </span >
           {/**/}
-          <span>
+          <span style={showArray[1] ? { opacity: "1" } : { opacity: "0" }}>
             {japaneseArray2.map((item) =>
               <ruby>
                 {item.kanji}
@@ -68,7 +68,7 @@ function RubyFunc({ version }) {
               </ruby>)}
           </span >
           {/**/}
-          <span>
+          <span style={showArray[2] ? { opacity: "1" } : { opacity: "0" }}>
             {japaneseArray4.map((item) =>
               <ruby>
                 {item.kanji}
@@ -87,7 +87,7 @@ function RubyFunc({ version }) {
               </ruby>)}
           </span >
           {/**/}
-          <span>
+          <span style={showArray[3] ? { opacity: "1" } : { opacity: "0" }}>
             {japaneseArray6.map((item) =>
               <ruby>
                 {item.kanji}

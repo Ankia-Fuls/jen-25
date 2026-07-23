@@ -6,6 +6,8 @@ function Done({ setState }) {
     setState(3);
   };
 
+  const [display, setDisplay] = useState([0, 0, 0, 0]);
+
 
   return (
     <>
@@ -13,7 +15,7 @@ function Done({ setState }) {
       <span className="jp">
         {/* Happy 25th birthday */}
 
-        <RubyFunc version={0} />
+        <RubyFunc version={0} showArray={display} />
 
         <button onClick={done}>Reset</button>
       </span>
