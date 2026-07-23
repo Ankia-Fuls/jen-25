@@ -235,3 +235,21 @@
     }
 
 }
+
+.final-page .girls {
+    position: absolute;
+
+    .svg {
+        width: 350px;
+        height: 200px;
+    }
+
+    .fur {
+        fill: var(--text-colour);
+    }
+
+    bottom: calc(0% + 200px);
+    right: 40%;
+
+
+}
