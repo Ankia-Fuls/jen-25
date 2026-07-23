@@ -120,8 +120,6 @@ $bp-m: 700px;
     animation: last-correct 0.5s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-
-
   }
 }
 
@@ -154,7 +152,6 @@ button {
     left: 3.8rem;
     top: 6rem;
     font-size: 1.8rem;
-
   }
 }
 
@@ -175,7 +172,6 @@ button {
     color: #5e6234;
     z-index: -1;
   }
-
 }
 
 #rock-group {
@@ -218,7 +214,6 @@ button {
     writing-mode: vertical-rl;
     height: 15rem;
   }
-
 }
 
 #mindwipe {
@@ -229,17 +224,114 @@ button {
 
   left: 1.6%;
   width: clamp(7rem, 8.3%, 10rem);
+}
 
+@keyframes sigilColour {
+  0% {
+    stroke: purple;
+  }
+
+  25% {
+    stroke: blue;
+  }
+
+  50% {
+    stroke: turquoise;
+  }
+
+  75% {
+    stroke: green;
+  }
+
+  100% {
+    stroke: purple;
+  }
+}
+
+@keyframes sigilColourFill {
+  0% {
+    stroke: purple;
+    fill: purple;
+  }
+
+  25% {
+    stroke: blue;
+    fill: blue;
+  }
+
+  50% {
+    stroke: turquoise;
+    fill: turquoise;
+  }
+
+  75% {
+    stroke: green;
+    fill: green;
+  }
+
+  100% {
+    stroke: purple;
+    fill: purple;
+  }
+}
+
+@keyframes sigilGlow {
+  0% {
+  }
+
+  25% {
+    filter: drop-shadow(0 0 3px white);
+  }
+
+  50% {
+  }
+
+  75% {
+    filter: drop-shadow(0 0 3px white);
+  }
+
+  100% {
+  }
 }
 
 #grasping-wind {
-  // left: 20rem;
   bottom: 7rem;
-  // width: 15rem;
   height: 15rem;
 
   left: 16.67%;
   width: clamp(11rem, 12.5%, 15rem);
+
+  // animation: sigilGlow ease-in;
+  // animation-iteration-count: infinite;
+  // animation-duration: 8s;
+
+  #l2__container {
+    animation: sigilColour linear;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+  }
+
+  #l2__arrow-1,
+  #l2__arrow-2,
+  #l2__arrow-3,
+  #l2__arrow-4 {
+    .stroke {
+      animation: sigilColour linear;
+      animation-iteration-count: infinite;
+      animation-duration: 12s;
+    }
+  }
+
+  #m2__S,
+  #m2__lines-right,
+  #m2__lines-left {
+    .stroke {
+      animation: sigilColour linear;
+      animation-iteration-count: infinite;
+      animation-duration: 12s;
+      animation-delay: -1s;
+    }
+  }
 }
 
 #light {
@@ -250,6 +342,29 @@ button {
 
   left: 27.5%;
   width: clamp(9rem, 10%, 12rem);
+
+  #l8__container {
+    animation: sigilColour linear;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+  }
+
+  #l8__Ts {
+    .stroke {
+      animation: sigilColour linear;
+      animation-iteration-count: infinite;
+      animation-duration: 8s;
+    }
+  }
+
+  #m8__center {
+    .stroke {
+      animation: sigilColour linear;
+      animation-iteration-count: infinite;
+      animation-duration: 8s;
+      animation-delay: -1s;
+    }
+  }
 }
 
 #pyreball {
@@ -260,64 +375,233 @@ button {
 
   left: 47.5%;
   width: clamp(10rem, 13.3%, 16rem);
+
+  #l3__container {
+    animation: sigilColour linear;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+  }
+
+  #l3__arrow-1,
+  #l3__arrow-2,
+  #l3__arrow-3,
+  #l3__arrow-4 {
+    .stroke {
+      animation: sigilColour linear;
+      animation-iteration-count: infinite;
+      animation-duration: 9s;
+    }
+  }
+
+  #m3__center {
+    .stroke {
+      animation: sigilColour linear;
+      animation-iteration-count: infinite;
+      animation-duration: 9s;
+      animation-delay: -1s;
+    }
+  }
 }
 
 #rock-breaker {
-  // left: 67rem;
   top: 24rem;
-  // width: 10rem;
   height: 10rem;
 
   left: 55.83%;
   width: clamp(8rem, 8.3%, 10rem);
+
+  #l1__container,
+  #l1__t-left-horizontal,
+  #l1__t-left-vertical,
+  #l1__t-right-horizontal,
+  #l1__t-right-vertical,
+  #l1__m-bottom,
+  #l1__m-top {
+    animation: sigilColour linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+  }
+
+  #m1__h-line-top,
+  #m1__v-line-center,
+  #m1__h-line-bottom,
+  #m1__angle-left,
+  #m1__angle-right {
+    animation: sigilColour linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-delay: -1s;
+  }
+
+  #m1__circle-right,
+  #m1__circle-left {
+    animation: sigilColourFill linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-delay: -1s;
+  }
 }
 
 #SBOS {
-  // left: 68rem;
   top: 3rem;
-  // width: 20rem;
   height: 20rem;
 
   left: 56.67%;
   width: clamp(15rem, 16.67%, 20rem);
+
+  #lpath256,
+  #lpath257 {
+    animation: sigilColour linear;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+  }
+
+  #l10__outer-decorations,
+  #l10__outer-circles {
+    .stroke {
+      animation: sigilColour linear;
+      animation-iteration-count: infinite;
+      animation-duration: 15s;
+    }
+    .fill {
+      animation: sigilColourFill linear;
+      animation-iteration-count: infinite;
+      animation-duration: 15s;
+    }
+  }
+
+  #mpath258 {
+    animation: sigilColour linear;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-delay: -1s;
+  }
+
+  #m10__center-tie-shapes,
+  #m10__center-flower,
+  #m10__center-circles {
+    .stroke {
+      animation: sigilColour linear;
+      animation-iteration-count: infinite;
+      animation-duration: 15s;
+      animation-delay: -1s;
+    }
+  }
 }
 
 #snugstone {
-  // left: 90rem;
   top: 20rem;
-  // width: 18rem;
   height: 18rem;
 
   left: 75%;
   width: clamp(15rem, 15%, 18rem);
+
+  #l6__container {
+    animation: sigilColour linear;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+  }
+
+  #l6__Ts,
+  #l6__curves {
+    .stroke {
+      animation: sigilColour linear;
+      animation-iteration-count: infinite;
+      animation-duration: 7s;
+    }
+  }
+
+  #m6__center {
+    .stroke {
+      animation: sigilColour linear;
+      animation-iteration-count: infinite;
+      animation-duration: 7s;
+      animation-delay: -1s;
+    }
+  }
 }
 
 #sylphshoes {
-  // right: 7rem;
   bottom: 3rem;
-  // width: 14rem;
   height: 14rem;
 
   right: 5.83%;
   width: clamp(10rem, 11.67%, 14rem);
+
+  #l9__container {
+    animation: sigilColour linear;
+    animation-iteration-count: infinite;
+    animation-duration: 11s;
+  }
+
+  #l9__triangles,
+  #l9__arrows {
+    .stroke {
+      animation: sigilColour linear;
+      animation-iteration-count: infinite;
+      animation-duration: 11s;
+    }
+  }
+
+  #m9__center-spiral,
+  #m9__center-arcs {
+    .stroke {
+      animation: sigilColour linear;
+      animation-iteration-count: infinite;
+      animation-duration: 11s;
+      animation-delay: -1s;
+    }
+  }
 }
 
 #time-rewind {
-  // left: 41rem;
   bottom: 10rem;
-  // width: 12rem;
   height: 12rem;
 
   left: 34.17%;
   width: clamp(9rem, 10%, 12rem);
+
+  .stroke {
+    animation: sigilColour linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10.5s;
+  }
+
+  .fill {
+    animation: sigilColourFill linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10.5s;
+  }
 }
 
 #water-blade {
-  // left: 53rem;
   top: 3rem;
-  // width: 12rem;
   height: 12rem;
 
   left: 44.17%;
   width: clamp(9rem, 10%, 12rem);
+
+  #l7__container {
+    animation: sigilColour linear;
+    animation-iteration-count: infinite;
+    animation-duration: 12.5s;
+  }
+
+  #l7__lines,
+  #l7__triangles {
+    .stroke {
+      animation: sigilColour linear;
+      animation-iteration-count: infinite;
+      animation-duration: 12.5s;
+    }
+  }
+
+  #m7__S {
+    .stroke {
+      animation: sigilColour linear;
+      animation-iteration-count: infinite;
+      animation-duration: 12.5s;
+      animation-delay: -1s;
+    }
+  }
 }

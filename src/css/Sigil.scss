@@ -54,21 +54,19 @@ body,
   transition: all ease-in-out 0.05s;
 
   &--chosen {
-
     filter: drop-shadow(0 0 3px white);
 
     .stroke {
-      stroke: #95ff95;
+      stroke: #95ff95 !important;
     }
 
     .fill {
-      stroke: #95ff95;
-      fill: #95ff95;
+      stroke: #95ff95 !important;
+      fill: #95ff95 !important;
     }
   }
 
   &--inert {
-
     .stroke {
       stroke: #4e4e4e;
     }
