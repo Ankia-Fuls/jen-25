@@ -32,9 +32,17 @@ function Start({ setState }) {
         <Brushbuddy1 />
       </span>
 
-      <span className="">
-
+      <span className="container container-1">
+        <div className="bubble-1"></div>
+        <div className="bubble-2"></div>
       </span>
+
+      <span className="container container-2">
+        <div className="bubble-5"></div>
+        <div className="bubble-3"></div>
+        <div className="bubble-4"></div>
+      </span>
+
     </section>
   );
 }

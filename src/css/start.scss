@@ -93,6 +93,20 @@ $bp-m: 700px;
   }
 }
 
+@keyframes move-up {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  70% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(5px, -5px);
+  }
+}
+
 .starting-page .bb {
   position: absolute;
 
@@ -121,11 +135,12 @@ $bp-m: 700px;
     .svg {
       width: 400px;
       height: 300px;
+
+      animation: move-up 8s ease-in-out infinite alternate-reverse forwards;
     }
 
     .pupil-thin {
       animation: eyes 8s ease-in-out infinite alternate-reverse forwards;
-
     }
   }
 
@@ -140,5 +155,89 @@ $bp-m: 700px;
       height: 150px;
     }
   }
+}
 
+@keyframes bubble-bounce {
+  from {
+    transform: translateY(50%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.starting-page {
+  .container {
+    position: absolute;
+
+    &-1 {
+      left: 8%;
+      top: 35%;
+    }
+
+    &-2 {
+      right: 8%;
+      top: 25%;
+    }
+  }
+
+  .bubble-1 {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: inherit;
+    border: 0.125rem solid white;
+    box-shadow: 0 0 7px var(--hat-teal), inset 0 0 7px var(--hat-teal);
+
+    animation: bubble-bounce 5s ease-in-out infinite alternate-reverse;
+    animation-delay: 1s;
+  }
+
+  .bubble-2 {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: inherit;
+    border: 0.125rem solid white;
+    box-shadow: 0 0 7px var(--hat-gold), inset 0 0 7px var(--hat-gold);
+    margin: 1rem 0 0 7rem;
+
+    animation: bubble-bounce 5s ease-in-out infinite alternate-reverse;
+  }
+
+  .bubble-3 {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: inherit;
+    border: 0.125rem solid white;
+    box-shadow: 0 0 7px #AF40FF, inset 0 0 7px #AF40FF;
+    margin: 1rem 0 0 7rem;
+
+    animation: bubble-bounce 5s ease-in-out infinite alternate-reverse;
+  }
+
+  .bubble-4 {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: inherit;
+    border: 0.125rem solid white;
+    box-shadow: 0 0 7px #00DDEB, inset 0 0 7px #00DDEB;
+
+    animation: bubble-bounce 5s ease-in-out infinite alternate-reverse;
+  }
+
+  .bubble-5 {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: inherit;
+    border: 0.125rem solid white;
+    box-shadow: 0 0 7px #5B42F3, inset 0 0 7px #5B42F3;
+
+    animation: bubble-bounce 5s ease-in-out infinite alternate-reverse;
+    animation-delay: 1s;
+  }
 }
