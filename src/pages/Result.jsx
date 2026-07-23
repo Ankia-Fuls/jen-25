@@ -53,6 +53,10 @@ function Result({ setState }) {
                 <Brushbuddy5 />
             </span>
 
+            <span className="girls" >
+                <Girls />
+            </span>
+
 
 
         </section>
