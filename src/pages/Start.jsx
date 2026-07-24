@@ -32,6 +32,18 @@ function Start({ setState }) {
         <Brushbuddy1 />
       </span>
 
+      <span className="dream">
+        <Dream />
+      </span>
+
+      <span className="pen">
+        <CocoPen />
+      </span>
+
+      <span className="book">
+        <CocoBook />
+      </span>
+
       <span className="container container-1">
         <div className="bubble-1"></div>
         <div className="bubble-2"></div>
