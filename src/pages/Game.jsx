@@ -222,13 +222,16 @@ function Game({ setState }) {
           <Brushbuddy6 />
         </span>
 
-        {success && (<button className="complete-btn" onClick={done}>continue?</button>)}
+        {success && (
+          <button className="complete-btn" onClick={done}>
+            <ruby>続ける</ruby>
+          </button>
+        )}
 
         <div className={"counter-display"}>
           <div className={"counter-display--" + amountCorrect.toString()}></div>
         </div>
       </div>
-
 
       <button onClick={() => select("rockbreaker")}>{<RockBreaker styling={styles.rockbreaker} />}</button>
       <button onClick={() => select("graspingwind")}>{<GraspingWind styling={styles.graspingwind} />}</button>
@@ -254,7 +257,6 @@ function Game({ setState }) {
       <button onClick={() => action("paper")} inert={cleared.paper}>
         {<Paper cleared={cleared.paper} />}
       </button>
-
     </section>
   );
 }
