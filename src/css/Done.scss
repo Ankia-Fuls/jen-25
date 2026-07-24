@@ -108,3 +108,64 @@ button.jp {
   bottom: 15%;
   transform: translate(50%, 50%);
 }
+
+@keyframes loadLine {
+  from {
+    scale: 0%;
+  }
+
+  to {
+    scale: 100%;
+  }
+}
+
+.loadLine-1 {
+  //Top l-r
+  content: "";
+  position: absolute;
+  height: 0.5rem;
+  width: 80%;
+  left: 10%;
+  top: 15%;
+  z-index: 0;
+  background-color: var(--hat-gold);
+
+  //Test
+  animation: loadLine 3s infinite linear;
+}
+
+.loadLine-2 {
+  //Bottom r-l
+  content: "";
+  position: absolute;
+  height: 0.5rem;
+  width: 80%;
+  left: 10%;
+  bottom: 15%;
+  z-index: 0;
+  background-color: var(--hat-gold);
+}
+
+.loadLine-3 {
+  //Left b-t
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 0.5rem;
+  left: 10%;
+  top: 15%;
+  z-index: 0;
+  background-color: var(--hat-gold);
+}
+
+.loadLine-4 {
+  //Right t-b
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 0.5rem;
+  right: 10%;
+  top: 15%;
+  z-index: 0;
+  background-color: var(--hat-gold);
+}

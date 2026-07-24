@@ -102,6 +102,11 @@ function Done({ setState }) {
       <button className={styles["text-4"]} id="text-4" onClick={() => select("text-4")}>
         <RubyFunc version={4} action={action} />
       </button>
+
+      <div className="loadLine-1"></div>
+      <div className="loadLine-2"></div>
+      <div className="loadLine-3"></div>
+      <div className="loadLine-4"></div>
     </section>
   );
 }
