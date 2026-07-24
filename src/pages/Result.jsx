@@ -57,7 +57,7 @@ function Result({ setState }) {
                 <Girls />
             </span>
 
-            <div className="ribbons">
+            <div className="ribbons--container">
                 <span className="ribbons--1">
                     <Ribbon1 />
                 </span>

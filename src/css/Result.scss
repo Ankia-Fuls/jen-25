@@ -184,12 +184,56 @@
     }
 }
 
+@keyframes star-twinkle {
+    0% {
+        transform: rotateX(0) rotateY(0) rotateZ(0) scale(100%);
+
+    }
+
+    12.5% {
+        transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg) scale(50%);
+
+    }
+
+    25% {
+        transform: rotateX(90deg) rotateY(90deg) rotateZ(90deg) scale(0%);
+
+    }
+
+    37.5% {
+        transform: rotateX(135deg) rotateY(135deg) rotateZ(135deg) scale(50%);
+    }
+
+    50% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg) scale(100%);
+
+    }
+
+    62.5% {
+        transform: rotateX(225deg) rotateY(225deg) rotateZ(225deg) scale(50%);
+    }
+
+    75% {
+        transform: rotateX(275deg) rotateY(275deg) rotateZ(275deg) scale(0%);
+
+    }
+
+    87.5% {
+        transform: rotateX(315deg) rotateY(315deg) rotateZ(315deg) scale(50%);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg) scale(100%);
+
+    }
+}
+
 .final-page .star {
     position: absolute;
 
     .star {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
 
 
         * {
@@ -200,19 +244,78 @@
     }
 
     &--1 {
-        bottom: 60%;
+        bottom: 58%;
         left: 18%;
-        transform: rotate(-30deg);
+        // transform: rotate(-30deg);
+
+        .stroke:nth-of-type(1) {
+            // transform: rotateX(45deg);
+            transform-origin: 50%, 50%;
+            transform-origin: 50% 50%;
+            -webkit-transform-origin: 50% 50%;
+            -moz-transform-origin: 50% 50%;
+            animation: star-twinkle 10s linear infinite;
+        }
+
+        .stroke:nth-of-type(2) {
+            // transform: rotateX(45deg);
+            transform-origin: 50%, 50%;
+            transform-origin: 50% 50%;
+            -webkit-transform-origin: 50% 50%;
+            -moz-transform-origin: 50% 50%;
+            animation: star-twinkle 10s linear infinite;
+            animation-delay: -2.5s;
+        }
     }
 
     &--2 {
         bottom: 30%;
         right: 25%;
+
+        .stroke:nth-of-type(1) {
+            // transform: rotateX(45deg);
+            transform-origin: 50%, 50%;
+            transform-origin: 50% 50%;
+            -webkit-transform-origin: 50% 50%;
+            -moz-transform-origin: 50% 50%;
+            animation: star-twinkle 10s linear infinite;
+
+        }
+
+        .stroke:nth-of-type(2) {
+            // transform: rotateX(45deg);
+            transform-origin: 50%, 50%;
+            transform-origin: 50% 50%;
+            -webkit-transform-origin: 50% 50%;
+            -moz-transform-origin: 50% 50%;
+            animation: star-twinkle 10s linear infinite;
+            animation-delay: -2.5s;
+        }
     }
 
     &--3 {
         bottom: 18%;
         left: 33%;
+
+        .stroke:nth-of-type(1) {
+            // transform: rotateX(45deg);
+            transform-origin: 50%, 50%;
+            transform-origin: 50% 50%;
+            -webkit-transform-origin: 50% 50%;
+            -moz-transform-origin: 50% 50%;
+            animation: star-twinkle 10s linear infinite;
+
+        }
+
+        .stroke:nth-of-type(2) {
+            // transform: rotateX(45deg);
+            transform-origin: 50%, 50%;
+            transform-origin: 50% 50%;
+            -webkit-transform-origin: 50% 50%;
+            -moz-transform-origin: 50% 50%;
+            animation: star-twinkle 10s linear infinite;
+            animation-delay: -2.5s;
+        }
     }
 }
 
@@ -254,18 +357,31 @@
 }
 
 .final-page .ribbons {
-    position: absolute;
 
-    .svg {
-        width: 350px;
-        height: 300px;
+    &--container {
+        .svg {
+            width: 350px;
+            height: 300px;
 
-        filter: drop-shadow(0 0 2px #c0e4f0);
+            filter: drop-shadow(0 0 2px #c0e4f0);
+        }
+
+        .ribbon {
+            fill: #abd9e9;
+            stroke: #77b3b9;
+        }
     }
 
-    .ribbon {
-        fill: #abd9e9;
-        stroke: #77b3b9;
+    &--1 {
+        position: absolute;
+        top: 0;
+        left: 9%;
+    }
+
+    &--2 {
+        position: absolute;
+        top: 0;
+        right: 28%;
     }
 
 
