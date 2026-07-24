@@ -217,13 +217,13 @@ button {
 }
 
 #mindwipe {
-  // left: 2rem;
   bottom: 2rem;
-  // width: 10rem;
   height: 10rem;
 
   left: 1.6%;
   width: clamp(7rem, 8.3%, 10rem);
+
+  filter: drop-shadow(0 0 2px grey);
 }
 
 @keyframes sigilColour {
