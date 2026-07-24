@@ -517,7 +517,7 @@ button {
   }
 }
 
-#grasping-wind {
+#snugstone {
   bottom: 7rem;
   height: 15rem;
 
@@ -566,7 +566,7 @@ button {
   // }
 }
 
-#light {
+#sylphshoes {
   top: 23rem;
   height: 12rem;
 
@@ -611,7 +611,7 @@ button {
   // }
 }
 
-#pyreball {
+#time-rewind {
   bottom: 7rem;
   height: 16rem;
 
@@ -627,6 +627,13 @@ button {
 
   .stroke {
     animation: sigilColour linear;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-delay: -2s;
+  }
+
+  .fill {
+    animation: sigilColourFill linear;
     animation-iteration-count: infinite;
     animation-duration: 8s;
     animation-delay: -2s;
@@ -659,7 +666,7 @@ button {
   // }
 }
 
-#rock-breaker {
+#water-blade {
   top: 24rem;
   height: 10rem;
 
@@ -680,12 +687,7 @@ button {
     animation-delay: -3s;
   }
 
-  .fill {
-    animation: sigilColourFill linear;
-    animation-iteration-count: infinite;
-    animation-duration: 8s;
-    animation-delay: -3s;
-  }
+
 
   // #l1__container,
   // #l1__t-left-horizontal,
@@ -787,7 +789,7 @@ button {
   // }
 }
 
-#snugstone {
+#grasping-wind {
   top: 20rem;
   height: 18rem;
 
@@ -831,7 +833,7 @@ button {
   // }
 }
 
-#sylphshoes {
+#light {
   bottom: 3rem;
   height: 14rem;
 
@@ -878,7 +880,7 @@ button {
   // }
 }
 
-#time-rewind {
+#pyreball {
   bottom: 10rem;
   height: 12rem;
 
@@ -899,15 +901,10 @@ button {
     animation-delay: -5s;
   }
 
-  .fill {
-    animation: sigilColourFill linear;
-    animation-iteration-count: infinite;
-    animation-duration: 8s;
-    animation-delay: -5s;
-  }
+
 }
 
-#water-blade {
+#rock-breaker {
   top: 3rem;
   height: 12rem;
 
@@ -923,6 +920,13 @@ button {
 
   .stroke {
     animation: sigilColour linear;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-delay: -6s;
+  }
+
+  .fill {
+    animation: sigilColourFill linear;
     animation-iteration-count: infinite;
     animation-duration: 8s;
     animation-delay: -6s;
