@@ -4,7 +4,7 @@ import "../css/Result.scss";
 import { QifreyHat, OllyHat, GirlsHat } from "../components/Decorations/Hats.jsx";
 import { Star1, Star2, Star3, Star4 } from "../components/Decorations/Stars.jsx";
 import { Brushbuddy1, Brushbuddy2, Brushbuddy3, Brushbuddy4, Brushbuddy5 } from "../components/Decorations/BrushBuddy.jsx";
-import { Girls } from "../components/Decorations/Other.jsx";
+import { Girls, QifreyGlasses, QifreyShoes, CocoShoes, CocoPen, CocoBook, Ribbon1, Ribbon2, Dream } from "../components/Decorations/Other.jsx";
 
 import RubyFunc from "../components/Functions/rubyFunction.jsx";
 
@@ -56,6 +56,15 @@ function Result({ setState }) {
             <span className="girls" >
                 <Girls />
             </span>
+
+            <div className="ribbons">
+                <span className="ribbons--1">
+                    <Ribbon1 />
+                </span>
+                <span className="ribbons--2">
+                    <Ribbon2 />
+                </span>
+            </div>
 
 
 

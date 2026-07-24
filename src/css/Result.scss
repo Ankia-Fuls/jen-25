@@ -251,5 +251,22 @@
     bottom: calc(0% + 200px);
     right: 40%;
 
+}
+
+.final-page .ribbons {
+    position: absolute;
+
+    .svg {
+        width: 350px;
+        height: 300px;
+
+        filter: drop-shadow(0 0 2px #c0e4f0);
+    }
+
+    .ribbon {
+        fill: #abd9e9;
+        stroke: #77b3b9;
+    }
+
 
 }
