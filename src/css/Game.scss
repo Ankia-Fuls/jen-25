@@ -116,8 +116,8 @@ $bp-m: 700px;
 
   // background-color: rgb(117, 250, 124);
   background: linear-gradient(45deg, var(--correct-meter2), var(--correct-meter3));
-  width: 6rem;
-  height: 2rem;
+  width: 7rem;
+  height: 3rem;
   border-radius: 0.5rem;
   border: 2px solid var(--bg-colour);
   padding: 0 0.5rem;
@@ -128,13 +128,23 @@ $bp-m: 700px;
 
   // transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
 
+  ruby {
+    color: var(--correct-meter4);
+    filter: drop-shadow(0 0 1px rgb(205, 100, 223));
+    font-weight: 800;
+    font-size: 2rem;
+  }
+
   &:hover {
     cursor: pointer;
     // background-color: rgb(229, 233, 0);
     background: linear-gradient(45deg, var(--correct-meter), var(--correct-meter4));
     color: var(--text-colour);
-  }
 
+    ruby {
+      color: var(--correct-meter2);
+    }
+  }
 }
 
 @keyframes first-correct {
@@ -203,7 +213,6 @@ $bp-m: 700px;
   border-top: 0.25rem solid black;
   border-radius: 0 0 0.5rem 0;
   overflow: hidden;
-
 
   &--0 {
     height: 100%;
