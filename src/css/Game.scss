@@ -318,40 +318,42 @@ button {
 
   12.5% {
     filter: drop-shadow(0 0 1.5px rgb(223, 217, 100));
-    transform: scale(1.01, 1.01);
+    transform: rotate(45deg);
   }
 
   25% {
     filter: drop-shadow(0 0 1px rgb(149, 223, 100));
-    transform: scale(1.02, 1.02);
+    transform: rotate(90deg);
   }
 
   37.5% {
     filter: drop-shadow(0 0 1.5px rgb(100, 223, 157));
-    transform: scale(1.01, 1.01);
+    transform: rotate(135deg);
   }
 
   50% {
     filter: drop-shadow(0 0 2px rgb(100, 139, 223));
+    transform: rotate(180deg);
   }
 
   62.5% {
     filter: drop-shadow(0 0 1.5px rgb(100, 100, 223));
-    transform: scale(0.99, 0.99);
+    transform: rotate(225deg);
   }
 
   75% {
     filter: drop-shadow(0 0 1px rgb(205, 100, 223));
-    transform: scale(0.98, 0.98);
+    transform: rotate(270deg);
   }
 
   87.5% {
     filter: drop-shadow(0 0 1.5px rgb(223, 100, 155));
-    transform: scale(0.99, 0.99);
+    transform: rotate(315deg);
   }
 
   100% {
     filter: drop-shadow(0 0 2px rgb(223, 100, 100));
+    transform: rotate(360deg);
   }
 }
 
@@ -412,6 +414,7 @@ button {
   animation: sigilGlow linear;
   animation-iteration-count: infinite;
   animation-duration: 8s;
+  animation-delay: -1s;
 
   .stroke {
     animation: sigilColour linear;
@@ -454,6 +457,7 @@ button {
   animation: sigilGlow linear;
   animation-iteration-count: infinite;
   animation-duration: 8s;
+  animation-delay: -2s;
 
   .stroke {
     animation: sigilColour linear;
@@ -499,6 +503,7 @@ button {
   animation: sigilGlow linear;
   animation-iteration-count: infinite;
   animation-duration: 8s;
+  animation-delay: -3s;
 
   .stroke {
     animation: sigilColour linear;
@@ -556,6 +561,7 @@ button {
   animation: sigilGlow linear;
   animation-iteration-count: infinite;
   animation-duration: 8s;
+  animation-delay: -4s;
 
   .stroke {
     animation: sigilColour linear;
@@ -663,6 +669,7 @@ button {
   animation: sigilGlow linear;
   animation-iteration-count: infinite;
   animation-duration: 8s;
+  animation-delay: -1s;
 
   .stroke {
     animation: sigilColour linear;
@@ -707,6 +714,7 @@ button {
   animation: sigilGlow linear;
   animation-iteration-count: infinite;
   animation-duration: 8s;
+  animation-delay: -5s;
 
   .stroke {
     animation: sigilColour linear;
@@ -733,6 +741,7 @@ button {
   animation: sigilGlow linear;
   animation-iteration-count: infinite;
   animation-duration: 8s;
+  animation-delay: -6s;
 
   .stroke {
     animation: sigilColour linear;
