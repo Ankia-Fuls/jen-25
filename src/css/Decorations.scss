@@ -24,27 +24,27 @@
 }
 
 .q-hat-base {
-    fill: var(--grey-base);
+    fill: var(--grey-base) !important;
 }
 
 .q-hat-white {
-    fill: var(--white-base);
+    fill: var(--white-base) !important;
 }
 
 .hat-gold {
-    fill: var(--hat-gold);
+    fill: var(--hat-gold) !important;
 }
 
 .black1 {
-    fill: var(--hat-black-1);
+    fill: var(--hat-black-1) !important;
 }
 
 .black2 {
-    fill: var(--hat-black-2);
+    fill: var(--hat-black-2) !important;
 }
 
 .hat-teal {
-    fill: var(--hat-teal);
+    fill: var(--hat-teal) !important;
 }
 
 /* STARS */
@@ -145,4 +145,89 @@
 
 .girls-fill {
     fill: var(--black);
+}
+
+.glasses {
+    fill: var(--qifrey-glasses) !important;
+}
+
+.q-shoes1 {
+    fill: var(--qifrey-shoes1) !important;
+}
+
+.q-shoes2 {
+    fill: var(--qifrey-shoes2) !important;
+}
+
+.c-shoes1 {
+    fill: var(--coco-shoes1) !important;
+}
+
+.c-shoes2 {
+    fill: var(--coco-shoes2) !important;
+}
+
+.width-6 {
+    stroke-width: 0.225 !important;
+}
+
+.c-book1 {
+    fill: #d3ac6e;
+    fill-opacity: 1;
+    stroke: #5d3814;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 0;
+    stroke-dasharray: none;
+    stroke-opacity: 0.764706;
+}
+
+.c-book2 {
+    fill: #eadabc;
+    fill-opacity: 1;
+    stroke: #5d3814;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 0;
+    stroke-dasharray: none;
+    stroke-opacity: 0.764706;
+}
+
+.ribbon {
+    opacity: 1;
+    fill: #e1e7e9;
+    fill-opacity: 1;
+    stroke: #99acae;
+    stroke-width: 0.305001;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 0;
+    stroke-dasharray: none;
+    stroke-opacity: 1
+}
+
+.white-bubble {
+    fill: var(--white);
+    fill-opacity: 1;
+    stroke: var(--black);
+    stroke-width: 0.825;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 0;
+    stroke-dasharray: none;
+    stroke-opacity: 1
+}
+
+.ink {
+    fill: var(--ink);
+    fill-opacity: 1;
+    stroke: var(--ink);
+    stroke-width: 0.825;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 0;
+    stroke-dasharray: none;
+    stroke-opacity: 1
 }

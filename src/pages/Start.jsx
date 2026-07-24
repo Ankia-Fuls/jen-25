@@ -4,8 +4,8 @@ import ToJen from "../components/StartPage/ToJenSVG.jsx";
 
 import { QifreyHat, OllyHat, GirlsHat } from "../components/Decorations/Hats.jsx";
 import { Star1, Star2, Star3, Star4 } from "../components/Decorations/Stars.jsx";
-import { Brushbuddy1, Brushbuddy2, Brushbuddy3, Brushbuddy4, Brushbuddy5 } from "../components/Decorations/BrushBuddy.jsx";
-import { Girls } from "../components/Decorations/Other.jsx";
+import { Brushbuddy1, Brushbuddy2, Brushbuddy3, Brushbuddy4, Brushbuddy5, Brushbuddy6 } from "../components/Decorations/BrushBuddy.jsx";
+import { Girls, QifreyGlasses, QifreyShoes, CocoShoes, CocoPen, CocoBook, Ribbon1, Ribbon2, Dream } from "../components/Decorations/Other.jsx";
 
 
 function Start({ setState }) {
@@ -42,6 +42,7 @@ function Start({ setState }) {
         <div className="bubble-3"></div>
         <div className="bubble-4"></div>
       </span>
+
 
     </section>
   );
