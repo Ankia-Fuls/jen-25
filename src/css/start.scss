@@ -61,13 +61,6 @@ $bp-m: 700px;
   }
 }
 
-.gradient-text-example {
-  font-size: 2rem;
-  background: linear-gradient(180deg, red, blue);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 @keyframes walkies {
   from {

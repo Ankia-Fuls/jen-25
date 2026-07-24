@@ -321,11 +321,15 @@
 
 .final-page .bb {
     position: absolute;
+    cursor: pointer;
 
     .svg {
         width: 350px;
         height: 350px;
 
+        &:hover {
+            filter: drop-shadow(0 0 3px var(--hat-gold));
+        }
     }
 
     .fur {
@@ -348,6 +352,14 @@
     }
 
     .fur {
+        fill: var(--text-colour);
+    }
+
+
+    stroke: var(--text-colour);
+
+
+    .girls-fill {
         fill: var(--text-colour);
     }
 
@@ -383,6 +395,8 @@
         top: 0;
         right: 28%;
     }
+
+
 
 
 }

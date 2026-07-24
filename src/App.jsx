@@ -4,8 +4,10 @@ import Game from "./pages/Game";
 import Done from "./pages/Done";
 import Reset from "./pages/Reset";
 import Result from "./pages/Result";
+import Gallery from "./pages/Gallery";
 
 import "./css/App.scss";
+
 
 function App() {
   const [state, setState] = useState(0);
@@ -25,6 +27,7 @@ function App() {
       {state === 2 && <Done setState={setState} />}
       {state === 3 && <Reset />}
       {state === 4 && <Result setState={setState} />}
+      {state === 5 && <Gallery setState={setState} />}
     </>
   );
 }

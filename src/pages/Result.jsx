@@ -14,6 +14,10 @@ function Result({ setState }) {
         setState(3);
     }
 
+    const gallery = () => {
+        setState(5);
+    }
+
     return (
         <section className="final-page">
             <div className="center-text">
@@ -49,9 +53,9 @@ function Result({ setState }) {
                 <Star2 />
             </span>
 
-            <span className="bb bb--1" >
+            <button className="bb bb--1" onClick={gallery}>
                 <Brushbuddy5 />
-            </span>
+            </button>
 
             <span className="girls" >
                 <Girls />
