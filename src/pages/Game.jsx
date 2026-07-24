@@ -236,9 +236,6 @@ function Game({ setState }) {
       <button onClick={() => action("paper")} inert={cleared.paper}>
         {<Paper cleared={cleared.paper} />}
       </button>
-
-      {/* TO BE REMOVED */}
-      <button onClick={done}> DONE</button>
     </section>
   );
 }

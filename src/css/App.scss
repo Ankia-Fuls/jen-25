@@ -30,7 +30,6 @@
   --coco-shoes1: #f3cb4c;
   --coco-shoes2: #584607;
   --ink: #292929;
-
 }
 
 *,
@@ -56,4 +55,10 @@ body {
   span {
     color: var(--text-colour);
   }
+}
+
+rt,
+rp {
+  // filter: drop-shadow(0 0 1px rgb(223, 100, 155));
+  color: rgb(205, 100, 223);
 }

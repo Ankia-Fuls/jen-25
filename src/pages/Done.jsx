@@ -4,7 +4,6 @@ import "../css/Done.scss";
 import RubyFunc from "../components/Functions/rubyFunction.jsx";
 
 function Done({ setState }) {
-
   const [display, setDisplay] = useState({
     "text-1": 0,
     "text-2": 0,
@@ -78,17 +77,15 @@ function Done({ setState }) {
   };
 
   useEffect(() => {
-    if (display['text-1'] + display['text-2'] + display['text-3'] + display['text-4'] === 4) {
+    if (display["text-1"] + display["text-2"] + display["text-3"] + display["text-4"] === 4) {
       setTimeout(() => {
         setState(4);
       }, 1000);
     }
-  }, [display])
+  }, [display]);
 
   return (
     <section className="done-page">
-      {/* Happy 25th birthday */}
-
       <span className="jp" id="full-text">
         <RubyFunc version={0} showArray={display} action={action} />
       </span>

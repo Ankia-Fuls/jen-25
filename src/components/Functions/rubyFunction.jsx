@@ -34,76 +34,84 @@ function RubyFunc({ version, showArray, action }) {
     <>
       {version === 0 && (
         <>
-          <button onClick={() => action("text-1")}>
-            {japaneseArray1.map((item) => (
-              <ruby style={showArray["text-1"] ? { opacity: 1 } : { opacity: 0 }}>
-                {item.kanji}
-                <rp>(</rp>
-                <rt>{item.text}</rt>
-                <rp>)</rp>
-              </ruby>
-            ))}
+          <span className="jp-group">
+            <button onClick={() => action("text-1")}>
+              {japaneseArray1.map((item) => (
+                <ruby style={showArray["text-1"] ? { opacity: 1 } : { opacity: 0 }}>
+                  {item.kanji}
+                  <rp>(</rp>
+                  <rt>{item.text}</rt>
+                  <rp>)</rp>
+                </ruby>
+              ))}
 
-            {showArray["text-1"] === 0 && <span className="empty">----</span>}
-          </button>
-          {/**/}
-          <button onClick={() => action("text-2")}>
-            {japaneseArray2.map((item) => (
-              <ruby style={showArray["text-2"] ? { opacity: 1 } : { opacity: 0 }}>
-                {item.kanji}
-                <rp>(</rp>
-                <rt>{item.text}</rt>
-                <rp>)</rp>
-              </ruby>
-            ))}
-            {showArray["text-2"] === 0 && <span className="empty">----</span>}
-          </button>
-          <span>
-            {japaneseArray3.map((item) => (
-              <ruby>
-                {item.kanji}
-                <rp>(</rp>
-                <rt>{item.text}</rt>
-                <rp>)</rp>
-              </ruby>
-            ))}
+              {showArray["text-1"] === 0 && <span className="empty">----</span>}
+            </button>
           </span>
           {/**/}
-          <button onClick={() => action("text-3")}>
-            {japaneseArray4.map((item) => (
-              <ruby style={showArray["text-3"] ? { opacity: 1 } : { opacity: 0 }}>
-                {item.kanji}
-                <rp>(</rp>
-                <rt>{item.text}</rt>
-                <rp>)</rp>
-              </ruby>
-            ))}
-            {showArray["text-3"] === 0 && <span className="empty">----</span>}
-          </button>
-          <span>
-            {japaneseArray5.map((item) => (
-              <ruby>
-                {item.kanji}
-                <rp>(</rp>
-                <rt>{item.text}</rt>
-                <rp>)</rp>
-              </ruby>
-            ))}
+          <span className="jp-group">
+            <button onClick={() => action("text-2")}>
+              {japaneseArray2.map((item) => (
+                <ruby style={showArray["text-2"] ? { opacity: 1 } : { opacity: 0 }}>
+                  {item.kanji}
+                  <rp>(</rp>
+                  <rt>{item.text}</rt>
+                  <rp>)</rp>
+                </ruby>
+              ))}
+              {showArray["text-2"] === 0 && <span className="empty">----</span>}
+            </button>
+            <span>
+              {japaneseArray3.map((item) => (
+                <ruby>
+                  {item.kanji}
+                  <rp>(</rp>
+                  <rt>{item.text}</rt>
+                  <rp>)</rp>
+                </ruby>
+              ))}
+            </span>
           </span>
           {/**/}
-          <button onClick={() => action("text-4")}>
-            {japaneseArray6.map((item) => (
-              <ruby style={showArray["text-4"] ? { opacity: 1 } : { opacity: 0 }}>
-                {item.kanji}
-                <rp>(</rp>
-                <rt>{item.text}</rt>
-                <rp>)</rp>
-              </ruby>
-            ))}
-            {showArray["text-4"] === 0 && <span className="empty">----</span>}
-          </button>
+          <span className="jp-group">
+            <button onClick={() => action("text-3")}>
+              {japaneseArray4.map((item) => (
+                <ruby style={showArray["text-3"] ? { opacity: 1 } : { opacity: 0 }}>
+                  {item.kanji}
+                  <rp>(</rp>
+                  <rt>{item.text}</rt>
+                  <rp>)</rp>
+                </ruby>
+              ))}
+              {showArray["text-3"] === 0 && <span className="empty">----</span>}
+            </button>
+            <span>
+              {japaneseArray5.map((item) => (
+                <ruby>
+                  {item.kanji}
+                  <rp>(</rp>
+                  <rt>{item.text}</rt>
+                  <rp>)</rp>
+                </ruby>
+              ))}
+            </span>
+          </span>
           {/**/}
-          <span>
+          <span className="jp-group">
+            <button onClick={() => action("text-4")}>
+              {japaneseArray6.map((item) => (
+                <ruby style={showArray["text-4"] ? { opacity: 1 } : { opacity: 0 }}>
+                  {item.kanji}
+                  <rp>(</rp>
+                  <rt>{item.text}</rt>
+                  <rp>)</rp>
+                </ruby>
+              ))}
+              {showArray["text-4"] === 0 && <span className="empty">----</span>}
+            </button>
+          </span>
+          {/**/}
+          <span className="jp-group">
             {japaneseArray7.map((item) => (
               <ruby>
                 {item.kanji}
@@ -182,7 +190,7 @@ function RubyFunc({ version, showArray, action }) {
           </span>
           {/**/}
           <span className="jp-final--2">
-            <span >
+            <span>
               {japaneseArray2.map((item) => (
                 <ruby>
                   {item.kanji}

@@ -137,6 +137,10 @@ button {
   position: absolute;
   z-index: 1;
   font-size: 1.5rem;
+
+  ruby {
+    filter: none;
+  }
 }
 
 #iceberg-group {
@@ -394,7 +398,9 @@ button {
   left: 16.67%;
   width: clamp(11rem, 12.5%, 15rem);
 
-  animation: sigilGlow linear, spin-spin linear;
+  animation:
+    sigilGlow linear,
+    spin-spin linear;
   animation-iteration-count: infinite, infinite;
   animation-duration: 8s, 20s;
 
@@ -441,7 +447,9 @@ button {
   left: 27.5%;
   width: clamp(9rem, 10%, 12rem);
 
-  animation: sigilGlow linear, spin-spin linear;
+  animation:
+    sigilGlow linear,
+    spin-spin linear;
   animation-iteration-count: infinite, infinite;
   animation-duration: 8s, 20s;
   animation-delay: -1s;
@@ -484,7 +492,9 @@ button {
   left: 47.5%;
   width: clamp(10rem, 13.3%, 16rem);
 
-  animation: sigilGlow linear, spin-spin linear;
+  animation:
+    sigilGlow linear,
+    spin-spin linear;
   animation-iteration-count: infinite, infinite;
   animation-duration: 8s, 20s;
   animation-delay: -2s;
@@ -530,7 +540,9 @@ button {
   left: 55.83%;
   width: clamp(8rem, 8.3%, 10rem);
 
-  animation: sigilGlow linear, spin-spin linear;
+  animation:
+    sigilGlow linear,
+    spin-spin linear;
   animation-iteration-count: infinite, infinite;
   animation-duration: 8s, 20s;
   animation-delay: -3s;
@@ -588,7 +600,9 @@ button {
   left: 56.67%;
   width: clamp(15rem, 16.67%, 20rem);
 
-  animation: sigilGlow linear, spin-spin linear;
+  animation:
+    sigilGlow linear,
+    spin-spin linear;
   animation-iteration-count: infinite, infinite;
   animation-duration: 8s, 20s;
   animation-delay: -4s;
@@ -654,7 +668,9 @@ button {
   left: 75%;
   width: clamp(15rem, 15%, 18rem);
 
-  animation: sigilGlow linear, spin-spin linear;
+  animation:
+    sigilGlow linear,
+    spin-spin linear;
   animation-iteration-count: infinite, infinite;
   animation-duration: 8s, 20s;
 
@@ -696,7 +712,9 @@ button {
   right: 5.83%;
   width: clamp(10rem, 11.67%, 14rem);
 
-  animation: sigilGlow linear, spin-spin linear;
+  animation:
+    sigilGlow linear,
+    spin-spin linear;
   animation-iteration-count: infinite, infinite;
   animation-duration: 8s, 20s;
   animation-delay: -1s;
@@ -741,7 +759,9 @@ button {
   left: 34.17%;
   width: clamp(9rem, 10%, 12rem);
 
-  animation: sigilGlow linear, spin-spin linear;
+  animation:
+    sigilGlow linear,
+    spin-spin linear;
   animation-iteration-count: infinite, infinite;
   animation-duration: 8s, 20s;
   animation-delay: -5s;
@@ -768,7 +788,9 @@ button {
   left: 44.17%;
   width: clamp(9rem, 10%, 12rem);
 
-  animation: sigilGlow linear, spin-spin linear;
+  animation:
+    sigilGlow linear,
+    spin-spin linear;
   animation-iteration-count: infinite, infinite;
   animation-duration: 8s, 20s;
   animation-delay: -6s;
