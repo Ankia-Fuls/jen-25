@@ -6,6 +6,41 @@ $bp-m: 700px;
   position: absolute;
 }
 
+@keyframes bb-move {
+  from {
+    top: -60%;
+  }
+
+  to {
+    top: 0%;
+  }
+}
+
+@keyframes bb-done {
+  from {
+    top: -60%;
+  }
+
+  to {
+    top: 95%;
+  }
+}
+
+@keyframes btn-done {
+  0% {
+    top: -5%;
+  }
+
+  80% {
+    z-index: -1;
+  }
+
+  100% {
+    top: 120%;
+    z-index: 0;
+  }
+}
+
 .text-block {
   position: absolute;
   top: 0;
@@ -13,7 +48,13 @@ $bp-m: 700px;
   // width: 50rem;
   width: clamp(30rem, 41.67%, 50rem);
   height: 12rem;
-  background-color: hsl(from var(--bg-colour) h calc(s + 10) l);
+
+  // background-color: hsl(from var(--bg-colour) h calc(s + 10) l);
+  // background: linear-gradient(130deg, rgb(242, 243, 190) 10%, rgb(248, 248, 243));
+  background: linear-gradient(130deg, #cfb5a5, #ecd8cc);
+
+  border-radius: 0 0 1rem 0;
+
   padding: 1rem;
   border-right: 0.25rem solid black;
   border-bottom: 0.25rem solid black;
@@ -21,63 +62,148 @@ $bp-m: 700px;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+  color: var(--bg-colour);
+  font-weight: 600;
+  letter-spacing: 0.0625rem;
+
+  .qifrey-glasses-game {
+    position: absolute;
+    top: 81%;
+    left: -6%;
+
+    transform: rotateZ(-40deg);
+
+    transform-origin: 50%, 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+
+    .svg {
+      height: 70px;
+    }
+  }
+
+  .bb--game {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    z-index: -2;
+
+    animation: bb-move 7s ease-in-out infinite alternate;
+
+    .svg {
+      height: 300px;
+      width: 150px;
+    }
+
+    .fur {
+      fill: var(--text-colour);
+    }
+  }
+
+  .bb--success {
+    animation: bb-done 7s ease-in-out forwards;
+  }
+}
+
+.complete-btn {
+  position: absolute;
+  left: 4%;
+  top: 0%;
+
+  z-index: -1;
+
+  // background-color: rgb(117, 250, 124);
+  background: linear-gradient(45deg, var(--correct-meter2), var(--correct-meter3));
+  width: 6rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--bg-colour);
+  padding: 0 0.5rem;
+  letter-spacing: 0.0625rem;
+  font-size: 0.9rem;
+  color: var(--bg-colour);
+  animation: btn-done 7s ease-in-out forwards;
+
+  // transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    // background-color: rgb(229, 233, 0);
+    background: linear-gradient(45deg, var(--correct-meter), var(--correct-meter4));
+    color: var(--text-colour);
+  }
+
 }
 
 @keyframes first-correct {
   from {
     width: 0;
-    background-color: aliceblue;
+    // background-color: aliceblue;
+    background: linear-gradient(45deg, aliceblue, aliceblue);
   }
 
   to {
     width: 25%;
-    background-color: var(--correct-meter);
+    // background-color: var(--correct-meter);
+    background: linear-gradient(45deg, var(--correct-meter), var(--correct-meter));
   }
 }
 
 @keyframes second-correct {
   from {
     width: 25%;
-    background-color: var(--correct-meter);
+    // background-color: var(--correct-meter);
+    background: linear-gradient(45deg, var(--correct-meter), var(--correct-meter));
   }
 
   to {
     width: 50%;
-    background-color: var(--correct-meter2);
+    // background-color: var(--correct-meter2);
+    background: linear-gradient(45deg, var(--correct-meter), var(--correct-meter2));
   }
 }
 
 @keyframes third-correct {
   from {
     width: 50%;
-    background-color: var(--correct-meter2);
+    // background-color: var(--correct-meter2);
+    background: linear-gradient(45deg, var(--correct-meter), var(--correct-meter2));
   }
 
   to {
     width: 75%;
-    background-color: var(--correct-meter3);
+    // background-color: var(--correct-meter3);
+    background: linear-gradient(45deg, var(--correct-meter), var(--correct-meter2), var(--correct-meter3));
   }
 }
 
 @keyframes last-correct {
   from {
     width: 75%;
-    background-color: var(--correct-meter3);
+    // background-color: var(--correct-meter3);
+    background: linear-gradient(45deg, var(--correct-meter), var(--correct-meter2), var(--correct-meter3));
   }
 
   to {
     width: 100%;
-    background-color: var(--correct-meter4);
+    // background-color: var(--correct-meter4);
+    background: linear-gradient(45deg, var(--correct-meter), var(--correct-meter2), var(--correct-meter3), var(--correct-meter4));
   }
 }
 
 .counter-display {
   position: absolute;
-  top: calc(12rem - 1.5rem - 0.25rem);
+  top: calc(12rem - 1.8rem - 0.25rem);
 
   width: 100%;
-  height: 1.5rem;
+  height: 1.8rem;
   background-color: aliceblue;
+  border-top: 0.25rem solid black;
+  border-radius: 0 0 0.5rem 0;
+  overflow: hidden;
+
 
   &--0 {
     height: 100%;

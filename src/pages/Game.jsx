@@ -16,6 +16,9 @@ import Vines from "../components/GamePage/Vines.jsx";
 import Rock from "../components/GamePage/Rock.jsx";
 import Paper from "../components/GamePage/Paper.jsx";
 
+import { QifreyGlasses } from "../components/Decorations/Other.jsx";
+import { Brushbuddy6 } from "../components/Decorations/BrushBuddy.jsx";
+
 function Game({ setState }) {
   // VARIABLES
   const [styles, setStyles] = useState({
@@ -96,12 +99,16 @@ function Game({ setState }) {
     },
   };
 
+  const [success, setSuccess] = useState(false);
+
   // Complete game, move on to final page
   const done = () => {
-    setTimeout(() => {
-      setState(2);
-      clearSelection();
-    }, 1000);
+    // setTimeout(() => {
+    //   setState(2);
+    //   clearSelection();
+    // }, 1000);
+
+    setState(2);
   };
 
   // Reset to start page
@@ -175,8 +182,8 @@ function Game({ setState }) {
     setStyles({ ...styles, ...temp_clear });
 
     // if all done, complete game
-    if (amount === 4) {
-      done();
+    if (amount >= 4) {
+      setSuccess(true);
     }
   };
 
@@ -207,10 +214,21 @@ function Game({ setState }) {
     <section className="game-page">
       <div className="text-block">
         {displayText}
+        <span className="qifrey-glasses-game">
+          <QifreyGlasses />
+        </span>
+
+        <span className={success ? "bb--game bb--success" : "bb--game"}>
+          <Brushbuddy6 />
+        </span>
+
+        {success && (<button className="complete-btn" onClick={done}>continue?</button>)}
+
         <div className={"counter-display"}>
           <div className={"counter-display--" + amountCorrect.toString()}></div>
         </div>
       </div>
+
 
       <button onClick={() => select("rockbreaker")}>{<RockBreaker styling={styles.rockbreaker} />}</button>
       <button onClick={() => select("graspingwind")}>{<GraspingWind styling={styles.graspingwind} />}</button>
@@ -237,8 +255,6 @@ function Game({ setState }) {
         {<Paper cleared={cleared.paper} />}
       </button>
 
-      {/* TO BE REMOVED */}
-      <button onClick={done}> DONE</button>
     </section>
   );
 }

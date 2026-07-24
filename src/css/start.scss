@@ -29,10 +29,11 @@ $bp-m: 700px;
   font-size: 3rem;
   font-family: "Playwrite ID", cursive; //"Dancing Script", cursive;
   user-select: none;
-  outline: 0.25rem red solid;
-  border-radius: 2rem;
+  outline: 0.5rem var(--hat-gold) solid;
+  border-radius: 1.5rem;
   padding: 2rem 3rem;
-  background-color: hsl(from var(--bg-colour) h calc(s + 10) l);
+  // background-color: hsl(from var(--bg-colour) h calc(s + 10) l);
+  background-color: var(--hat-teal);
 
   @media screen and (max-width: $bp-m) {
     font-size: 2rem;
@@ -96,7 +97,7 @@ $bp-m: 700px;
   }
 
   100% {
-    transform: translate(10px, -10px);
+    transform: translate(25px, -25px);
   }
 }
 
@@ -166,12 +167,12 @@ $bp-m: 700px;
 
     &-1 {
       left: 8%;
-      top: 35%;
+      top: 40%;
     }
 
     &-2 {
-      right: 8%;
-      top: 25%;
+      right: 12%;
+      top: 13%;
     }
   }
 
@@ -181,7 +182,7 @@ $bp-m: 700px;
     border-radius: 50%;
     background-color: inherit;
     border: 0.125rem solid white;
-    box-shadow: 0 0 7px var(--hat-teal), inset 0 0 7px var(--hat-teal);
+    box-shadow: 0 0 10px var(--hat-teal), inset 0 0 10px var(--hat-teal);
 
     animation: bubble-bounce 5s ease-in-out infinite alternate;
     animation-delay: 1s;
@@ -193,7 +194,7 @@ $bp-m: 700px;
     border-radius: 50%;
     background-color: inherit;
     border: 0.125rem solid white;
-    box-shadow: 0 0 7px var(--hat-gold), inset 0 0 7px var(--hat-gold);
+    box-shadow: 0 0 10px var(--hat-gold), inset 0 0 10px var(--hat-gold);
     margin: 1rem 0 0 7rem;
 
     animation: bubble-bounce 5s ease-in-out infinite alternate;
@@ -205,7 +206,7 @@ $bp-m: 700px;
     border-radius: 50%;
     background-color: inherit;
     border: 0.125rem solid white;
-    box-shadow: 0 0 7px #AF40FF, inset 0 0 7px #AF40FF;
+    box-shadow: 0 0 10px #AF40FF, inset 0 0 10px #AF40FF;
     margin: 1rem 0 0 7rem;
 
     animation: bubble-bounce 5s ease-in-out infinite alternate;
@@ -217,7 +218,7 @@ $bp-m: 700px;
     border-radius: 50%;
     background-color: inherit;
     border: 0.125rem solid white;
-    box-shadow: 0 0 7px #00DDEB, inset 0 0 7px #00DDEB;
+    box-shadow: 0 0 10px #00DDEB, inset 0 0 10px #00DDEB;
 
     animation: bubble-bounce 5s ease-in-out infinite alternate;
   }
@@ -228,7 +229,7 @@ $bp-m: 700px;
     border-radius: 50%;
     background-color: inherit;
     border: 0.125rem solid white;
-    box-shadow: 0 0 7px #5B42F3, inset 0 0 7px #5B42F3;
+    box-shadow: 0 0 10px #5B42F3, inset 0 0 10px #5B42F3;
 
     animation: bubble-bounce 5s ease-in-out infinite alternate;
     animation-delay: 1s;
@@ -239,12 +240,12 @@ $bp-m: 700px;
   position: absolute;
 
   top: -5%;
-  left: 50%;
+  left: 45%;
 
   transform: rotateY(180deg) rotateZ(15deg);
 
   .svg {
-    width: 700px;
+    width: 550px;
     height: 200px;
   }
 }
